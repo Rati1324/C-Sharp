@@ -1,9 +1,0 @@
-C:\Users\rati\source\repos\new_appSolution\ClassLibrary1\bin\Debug\netcoreapp3.1\ClassLibrary1.deps.json
-C:\Users\rati\source\repos\new_appSolution\ClassLibrary1\bin\Debug\netcoreapp3.1\ClassLibrary1.dll
-C:\Users\rati\source\repos\new_appSolution\ClassLibrary1\bin\Debug\netcoreapp3.1\ClassLibrary1.pdb
-C:\Users\rati\source\repos\new_appSolution\ClassLibrary1\obj\Debug\netcoreapp3.1\ClassLibrary1.csprojAssemblyReference.cache
-C:\Users\rati\source\repos\new_appSolution\ClassLibrary1\obj\Debug\netcoreapp3.1\ClassLibrary1.AssemblyInfoInputs.cache
-C:\Users\rati\source\repos\new_appSolution\ClassLibrary1\obj\Debug\netcoreapp3.1\ClassLibrary1.AssemblyInfo.cs
-C:\Users\rati\source\repos\new_appSolution\ClassLibrary1\obj\Debug\netcoreapp3.1\ClassLibrary1.csproj.CoreCompileInputs.cache
-C:\Users\rati\source\repos\new_appSolution\ClassLibrary1\obj\Debug\netcoreapp3.1\ClassLibrary1.dll
-C:\Users\rati\source\repos\new_appSolution\ClassLibrary1\obj\Debug\netcoreapp3.1\ClassLibrary1.pdb
