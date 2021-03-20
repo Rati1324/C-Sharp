@@ -19,10 +19,6 @@ namespace TriangleClass
             this.a = a; this.b = b; this.c = c;
         }
 
-        public static void test()
-        {
-            Console.WriteLine("fuck you");
-        }
 
 
     }
