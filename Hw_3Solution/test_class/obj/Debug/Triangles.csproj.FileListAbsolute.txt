@@ -1,0 +1,6 @@
+C:\Users\rati\source\repos\Hw_3Solution\test_class\bin\Debug\test_class.dll
+C:\Users\rati\source\repos\Hw_3Solution\test_class\bin\Debug\test_class.pdb
+C:\Users\rati\source\repos\Hw_3Solution\test_class\obj\Debug\Triangles.csprojAssemblyReference.cache
+C:\Users\rati\source\repos\Hw_3Solution\test_class\obj\Debug\Triangles.csproj.CoreCompileInputs.cache
+C:\Users\rati\source\repos\Hw_3Solution\test_class\obj\Debug\test_class.dll
+C:\Users\rati\source\repos\Hw_3Solution\test_class\obj\Debug\test_class.pdb

@@ -1,0 +1,10 @@
+C:\Users\rati\source\repos\Hw_3Solution\Hw_3\bin\Debug\Hw_3.exe.config
+C:\Users\rati\source\repos\Hw_3Solution\Hw_3\bin\Debug\Hw_3.exe
+C:\Users\rati\source\repos\Hw_3Solution\Hw_3\bin\Debug\Hw_3.pdb
+C:\Users\rati\source\repos\Hw_3Solution\Hw_3\bin\Debug\test_class.dll
+C:\Users\rati\source\repos\Hw_3Solution\Hw_3\bin\Debug\test_class.pdb
+C:\Users\rati\source\repos\Hw_3Solution\Hw_3\obj\Debug\Hw_3.csprojAssemblyReference.cache
+C:\Users\rati\source\repos\Hw_3Solution\Hw_3\obj\Debug\Hw_3.csproj.CoreCompileInputs.cache
+C:\Users\rati\source\repos\Hw_3Solution\Hw_3\obj\Debug\Hw_3.csproj.CopyComplete
+C:\Users\rati\source\repos\Hw_3Solution\Hw_3\obj\Debug\Hw_3.exe
+C:\Users\rati\source\repos\Hw_3Solution\Hw_3\obj\Debug\Hw_3.pdb

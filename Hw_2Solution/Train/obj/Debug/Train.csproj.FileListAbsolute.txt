@@ -1,0 +1,6 @@
+C:\Users\rati\source\repos\Hw_2Solution\Train\bin\Debug\Train.dll
+C:\Users\rati\source\repos\Hw_2Solution\Train\bin\Debug\Train.pdb
+C:\Users\rati\source\repos\Hw_2Solution\Train\obj\Debug\Train.csprojAssemblyReference.cache
+C:\Users\rati\source\repos\Hw_2Solution\Train\obj\Debug\Train.csproj.CoreCompileInputs.cache
+C:\Users\rati\source\repos\Hw_2Solution\Train\obj\Debug\Train.dll
+C:\Users\rati\source\repos\Hw_2Solution\Train\obj\Debug\Train.pdb

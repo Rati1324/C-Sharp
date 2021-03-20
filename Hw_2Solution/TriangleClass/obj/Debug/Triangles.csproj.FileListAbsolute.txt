@@ -1,0 +1,5 @@
+C:\Users\rati\source\repos\Hw_2Solution\TriangleClass\bin\Debug\TriangleClass.dll
+C:\Users\rati\source\repos\Hw_2Solution\TriangleClass\bin\Debug\TriangleClass.pdb
+C:\Users\rati\source\repos\Hw_2Solution\TriangleClass\obj\Debug\Triangles.csproj.CoreCompileInputs.cache
+C:\Users\rati\source\repos\Hw_2Solution\TriangleClass\obj\Debug\TriangleClass.dll
+C:\Users\rati\source\repos\Hw_2Solution\TriangleClass\obj\Debug\TriangleClass.pdb

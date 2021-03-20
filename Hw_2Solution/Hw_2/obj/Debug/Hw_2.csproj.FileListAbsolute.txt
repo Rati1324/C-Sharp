@@ -1,0 +1,12 @@
+C:\Users\rati\source\repos\Hw_2Solution\Hw_2\bin\Debug\Hw_2.exe.config
+C:\Users\rati\source\repos\Hw_2Solution\Hw_2\bin\Debug\Hw_2.exe
+C:\Users\rati\source\repos\Hw_2Solution\Hw_2\bin\Debug\Hw_2.pdb
+C:\Users\rati\source\repos\Hw_2Solution\Hw_2\bin\Debug\TriangleClass.dll
+C:\Users\rati\source\repos\Hw_2Solution\Hw_2\bin\Debug\TriangleClass.pdb
+C:\Users\rati\source\repos\Hw_2Solution\Hw_2\obj\Debug\Hw_2.csprojAssemblyReference.cache
+C:\Users\rati\source\repos\Hw_2Solution\Hw_2\obj\Debug\Hw_2.csproj.CoreCompileInputs.cache
+C:\Users\rati\source\repos\Hw_2Solution\Hw_2\obj\Debug\Hw_2.csproj.CopyComplete
+C:\Users\rati\source\repos\Hw_2Solution\Hw_2\obj\Debug\Hw_2.exe
+C:\Users\rati\source\repos\Hw_2Solution\Hw_2\obj\Debug\Hw_2.pdb
+C:\Users\rati\source\repos\Hw_2Solution\Hw_2\bin\Debug\Train.dll
+C:\Users\rati\source\repos\Hw_2Solution\Hw_2\bin\Debug\Train.pdb
