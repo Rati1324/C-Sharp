@@ -49,11 +49,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\test_class\Triangles.csproj">
-      <Project>{9d81e597-faae-4bbc-bb08-08aa7acb54e3}</Project>
-      <Name>Triangles</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

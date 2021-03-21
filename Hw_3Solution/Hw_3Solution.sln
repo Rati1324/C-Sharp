@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hw_3", "Hw_3\Hw_3.csproj", "{342FC103-2563-4709-8583-4FB94412A700}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triangles", "test_class\Triangles.csproj", "{9D81E597-FAAE-4BBC-BB08-08AA7ACB54E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triangles", "Triangles\Triangles.csproj", "{9D81E597-FAAE-4BBC-BB08-08AA7ACB54E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
