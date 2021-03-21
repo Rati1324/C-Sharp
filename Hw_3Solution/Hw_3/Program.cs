@@ -8,6 +8,7 @@ namespace Hw_3
 {
     class Program
     {
+        // amocana 3.7.1
         static void Main(string[] args)
         {
             // statikuri metodebia da gadaecemat obieqtebi

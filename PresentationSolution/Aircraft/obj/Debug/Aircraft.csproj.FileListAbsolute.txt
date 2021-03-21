@@ -1,0 +1,6 @@
+C:\Users\rati\source\repos\PresentationSolution\Aircraft\bin\Debug\Aircraft.dll
+C:\Users\rati\source\repos\PresentationSolution\Aircraft\bin\Debug\Aircraft.pdb
+C:\Users\rati\source\repos\PresentationSolution\Aircraft\obj\Debug\Aircraft.csprojAssemblyReference.cache
+C:\Users\rati\source\repos\PresentationSolution\Aircraft\obj\Debug\Aircraft.csproj.CoreCompileInputs.cache
+C:\Users\rati\source\repos\PresentationSolution\Aircraft\obj\Debug\Aircraft.dll
+C:\Users\rati\source\repos\PresentationSolution\Aircraft\obj\Debug\Aircraft.pdb

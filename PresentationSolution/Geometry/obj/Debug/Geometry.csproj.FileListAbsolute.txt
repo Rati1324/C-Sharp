@@ -1,0 +1,6 @@
+C:\Users\rati\source\repos\PresentationSolution\Geometry\bin\Debug\Geometry.dll
+C:\Users\rati\source\repos\PresentationSolution\Geometry\bin\Debug\Geometry.pdb
+C:\Users\rati\source\repos\PresentationSolution\Geometry\obj\Debug\Geometry.csprojAssemblyReference.cache
+C:\Users\rati\source\repos\PresentationSolution\Geometry\obj\Debug\Geometry.csproj.CoreCompileInputs.cache
+C:\Users\rati\source\repos\PresentationSolution\Geometry\obj\Debug\Geometry.dll
+C:\Users\rati\source\repos\PresentationSolution\Geometry\obj\Debug\Geometry.pdb

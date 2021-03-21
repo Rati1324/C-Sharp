@@ -6,6 +6,7 @@ namespace TriangleClass
 {
     public class Triangle_child : Triangle
     {
+        
         public Triangle_child(float a, float b, float c) : base(a, b, c) { }
 
         public static float this_peri(Triangle_child x)
