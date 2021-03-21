@@ -10,3 +10,13 @@ C:\Users\rati\source\repos\PresentationSolution\Presentation\bin\Debug\GeometryI
 C:\Users\rati\source\repos\PresentationSolution\Presentation\bin\Debug\GeometryInheritance.pdb
 C:\Users\rati\source\repos\PresentationSolution\Presentation\bin\Debug\Aircraft.dll
 C:\Users\rati\source\repos\PresentationSolution\Presentation\bin\Debug\Aircraft.pdb
+C:\Users\rati\source\repos\C-Sharp\PresentationSolution\Presentation\obj\Debug\Presentation.csprojAssemblyReference.cache
+C:\Users\rati\source\repos\C-Sharp\PresentationSolution\Presentation\obj\Debug\Presentation.csproj.CoreCompileInputs.cache
+C:\Users\rati\source\repos\C-Sharp\PresentationSolution\Presentation\obj\Debug\Presentation.exe
+C:\Users\rati\source\repos\C-Sharp\PresentationSolution\Presentation\obj\Debug\Presentation.pdb
+C:\Users\rati\source\repos\C-Sharp\PresentationSolution\Presentation\bin\Debug\Presentation.exe.config
+C:\Users\rati\source\repos\C-Sharp\PresentationSolution\Presentation\bin\Debug\Presentation.exe
+C:\Users\rati\source\repos\C-Sharp\PresentationSolution\Presentation\bin\Debug\Presentation.pdb
+C:\Users\rati\source\repos\C-Sharp\PresentationSolution\Presentation\bin\Debug\Aircraft.dll
+C:\Users\rati\source\repos\C-Sharp\PresentationSolution\Presentation\bin\Debug\Aircraft.pdb
+C:\Users\rati\source\repos\C-Sharp\PresentationSolution\Presentation\obj\Debug\Presentation.csproj.CopyComplete

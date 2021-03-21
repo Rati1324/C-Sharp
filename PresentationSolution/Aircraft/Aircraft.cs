@@ -8,23 +8,24 @@ namespace Aircraft
 {
     public class Aircraft
     {
-        protected string Name;
-        protected string Location;
+        private string Name;
         protected float Altitude;
         protected int Speed;
-        
-        public Aircraft(string Name, string Location, float Altitude, int Speed)
+        protected int FuelPerHour;
+        public string GetName()
         {
-            this.Name = Name; this.Location = Location;
-            this.Altitude = Altitude; this.Speed = Speed;
+            get { return Name; }
+        }
+        public Aircraft(string Name, float Altitude, int Speed, int FuelPerHour)
+        {
+            this.Name = Name; this.Altitude = Altitude; 
+            this.Speed = Speed; this.FuelPerHour = FuelPerHour;
         }
 
-        public float FuelNeeded(float Distance, float FuelPerHour, float Speed)
+        public virtual float FuelNeeded(float Distance, float FuelPerHour, float Speed)
             => (Distance / Speed) * FuelPerHour;
 
         public float TimeNeeded(float Distance, float Speed)
             => Distance / Speed;
-
-
     }
 }

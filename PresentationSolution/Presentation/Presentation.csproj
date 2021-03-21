@@ -54,10 +54,6 @@
       <Project>{b0c8a8d1-d180-4d19-932b-85084da87669}</Project>
       <Name>Aircraft</Name>
     </ProjectReference>
-    <ProjectReference Include="..\GeometryInheritance\GeometryInheritance.csproj">
-      <Project>{07654eb0-6f7c-4043-b59a-235af2935c6b}</Project>
-      <Name>GeometryInheritance</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
