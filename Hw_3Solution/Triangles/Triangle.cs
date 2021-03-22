@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TriangleClass
+namespace Hw_3
 {
+    // amocana 3.7.1
     public class Triangle
     {
         protected float a;

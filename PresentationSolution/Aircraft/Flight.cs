@@ -28,7 +28,6 @@ namespace AircraftNspace
             this.destination = destination;
             this.plane = plane;
         }
-
         public float GetTime()
             => plane.TimeNeeded(Distance, plane.GetSpeed);
 

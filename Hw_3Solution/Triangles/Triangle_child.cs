@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TriangleClass
+namespace Hw_3
 {
     public class Triangle_child : Triangle
     {
@@ -11,7 +11,6 @@ namespace TriangleClass
 
         public static float this_peri(Triangle_child x)
          => x.a + x.b + x.c;
-
 
         public static float parent_peri(Triangle x)
          => x.A + x.B + x.C;

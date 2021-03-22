@@ -1,0 +1,6 @@
+C:\Users\rati\source\repos\C-Sharp\Hw_3Solution\Triangles\obj\Debug\Task.csprojAssemblyReference.cache
+C:\Users\rati\source\repos\C-Sharp\Hw_3Solution\Triangles\obj\Debug\Task.csproj.CoreCompileInputs.cache
+C:\Users\rati\source\repos\C-Sharp\Hw_3Solution\Triangles\bin\Debug\Task.dll
+C:\Users\rati\source\repos\C-Sharp\Hw_3Solution\Triangles\bin\Debug\Task.pdb
+C:\Users\rati\source\repos\C-Sharp\Hw_3Solution\Triangles\obj\Debug\Task.dll
+C:\Users\rati\source\repos\C-Sharp\Hw_3Solution\Triangles\obj\Debug\Task.pdb
