@@ -4,25 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Aircraft
+namespace AircraftNspace
 {
     public class Civilian : Aircraft
     {
-        protected int MaxPassengers;
-        public Civilian(int MaxPassengers, string Name, float Altitude, int Speed, int FuelPerHour)
-            : base(Name, Altitude, Speed, FuelPerHour)
+        protected int maxPassengers;
+        
+        public Civilian(int maxPassengers, string name, float altitude, int speedKm, float fuelPerHour)
+            : base(name, altitude, speedKm, fuelPerHour)
         {
-            this.MaxPassengers = MaxPassengers;
+            this.maxPassengers = maxPassengers;
         }
 
-        public override float FuelNeeded(float Distance, float FuelPerHour, float Speed)
-        {
-            return (Distance / Speed) * FuelPerHour + (MaxPassengers * 5);
-        }
+        public int GetPassengers { get => maxPassengers; }
 
-        public void test()
+        public override string GetInfo()
+            => $"{base.GetInfo()}\nMax Number Of Passengers: {maxPassengers}\n";
+
+        public override float FuelNeeded(float Distance, float FuelPerHour, float speedKm)
         {
-            Console.WriteLine(GetName());
+            return base.FuelNeeded(Distance, FuelPerHour, speedKm) + (maxPassengers * 5);
         }
     }
 }

@@ -4,22 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Aircraft
+
+namespace AircraftNspace
 {
-    public class Fighter:Aircraft
+    public class Fighter : Aircraft
     {
-        protected bool TwoSeats;
-        public Fighter(string Name, float Altitude, int Speed, int FuelPerHour, bool TwoSeats)
-            : base (Name, Altitude, Speed, FuelPerHour)
+        protected internal bool TwoSeats;
+        protected internal int NumOfMissles;
+        public Fighter(string Name, float Altitude, int speedKm, float FuelPerHour, bool TwoSeats, int NumOfMissles)
+            : base(Name, Altitude, speedKm, FuelPerHour)
         {
             this.TwoSeats = TwoSeats;
+            this.NumOfMissles = NumOfMissles;
         }
 
-        public string GetInfo()
-            => $"Name: {Name}\nAltitude: {Altitude}\nSpeed: {Speed}";
+        public override string GetInfo()
+            => base.GetInfo() + $"\nTwo Seats: {TwoSeats}\nNumber Of Missles: {NumOfMissles}\n";
 
-        public int GetInfo(int Num)
-            => FuelPerHour * Num;
+        public float GetFuelPerHour()
+            => fuelPerHour;
+        public float GetFuelPerHour(float Num)
+            => fuelPerHour * Num;
 
     }
 }

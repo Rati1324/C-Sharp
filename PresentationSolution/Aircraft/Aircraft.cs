@@ -4,28 +4,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Aircraft
+namespace AircraftNspace
 {
     public class Aircraft
     {
-        private string Name;
-        protected float Altitude;
-        protected int Speed;
-        protected int FuelPerHour;
-        public string GetName()
+        protected string name;
+        protected float altitude;
+        protected int speedKm;
+        protected float fuelPerHour;
+        
+        public int GetSpeed { get => speedKm; }
+        public float GetFuel { get => fuelPerHour; }
+
+        public Aircraft(string name, float altitude, int speedKm, float fuelPerHour)
         {
-            get { return Name; }
-        }
-        public Aircraft(string Name, float Altitude, int Speed, int FuelPerHour)
-        {
-            this.Name = Name; this.Altitude = Altitude; 
-            this.Speed = Speed; this.FuelPerHour = FuelPerHour;
+            this.name = name; 
+            this.altitude = altitude; 
+            this.speedKm = speedKm; 
+            this.fuelPerHour = fuelPerHour;
         }
 
-        public virtual float FuelNeeded(float Distance, float FuelPerHour, float Speed)
-            => (Distance / Speed) * FuelPerHour;
+        public virtual string GetInfo()
+            => $"Name: {name}\nAltitude: {altitude}\nSpeed Km/h: {speedKm}" +
+            $"\nGallons per hour: {fuelPerHour}";
 
-        public float TimeNeeded(float Distance, float Speed)
-            => Distance / Speed;
+        public virtual float FuelNeeded(float distance, float fuelPerHour, float speedKm)
+            => (distance / speedKm) * fuelPerHour;
+
+        public float TimeNeeded(float distance, float speedKm)
+            => distance / speedKm;
+
+        public float KmToM()
+            => speedKm * (float)0.62;
     }
 }

@@ -1,6 +1,0 @@
-C:\Users\rati\source\repos\PresentationSolution\GeometryInheritance\bin\Debug\GeometryInheritance.dll
-C:\Users\rati\source\repos\PresentationSolution\GeometryInheritance\bin\Debug\GeometryInheritance.pdb
-C:\Users\rati\source\repos\PresentationSolution\GeometryInheritance\obj\Debug\GeometryInheritance.csprojAssemblyReference.cache
-C:\Users\rati\source\repos\PresentationSolution\GeometryInheritance\obj\Debug\GeometryInheritance.csproj.CoreCompileInputs.cache
-C:\Users\rati\source\repos\PresentationSolution\GeometryInheritance\obj\Debug\GeometryInheritance.dll
-C:\Users\rati\source\repos\PresentationSolution\GeometryInheritance\obj\Debug\GeometryInheritance.pdb

@@ -1,0 +1,9 @@
+C:\Users\rati\source\repos\C-Sharp\PresentationSolution\Internal\bin\Debug\Internal.dll
+C:\Users\rati\source\repos\C-Sharp\PresentationSolution\Internal\bin\Debug\Internal.pdb
+C:\Users\rati\source\repos\C-Sharp\PresentationSolution\Internal\obj\Debug\Internal.csprojAssemblyReference.cache
+C:\Users\rati\source\repos\C-Sharp\PresentationSolution\Internal\obj\Debug\Internal.csproj.CoreCompileInputs.cache
+C:\Users\rati\source\repos\C-Sharp\PresentationSolution\Internal\obj\Debug\Internal.dll
+C:\Users\rati\source\repos\C-Sharp\PresentationSolution\Internal\obj\Debug\Internal.pdb
+C:\Users\rati\source\repos\C-Sharp\PresentationSolution\Internal\bin\Debug\Aircraft.dll
+C:\Users\rati\source\repos\C-Sharp\PresentationSolution\Internal\bin\Debug\Aircraft.pdb
+C:\Users\rati\source\repos\C-Sharp\PresentationSolution\Internal\obj\Debug\Internal.csproj.CopyComplete

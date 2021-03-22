@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("GeometryInheritance")]
+[assembly: AssemblyTitle("Internal")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("GeometryInheritance")]
+[assembly: AssemblyProduct("Internal")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("07654eb0-6f7c-4043-b59a-235af2935c6b")]
+[assembly: Guid("8677bed6-f4bf-40f8-9f36-b0df92de8a4b")]
 
 // Version information for an assembly consists of the following four values:
 //
