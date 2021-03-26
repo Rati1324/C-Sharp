@@ -22,12 +22,23 @@ namespace AircraftNspace
         public string Airline { get => airline; set { airline = value; } }
         public string FlightNumber { get => flightNumber; set { flightNumber = value; } }
         public int Distance { get => distance; set { distance = value; } }
-        public Flight(string location, string destination, Aircraft plane)
+        public Flight(string location, string destination, Civilian plane)
         {
+            Console.WriteLine("Civilian!");
             this.location = location;
             this.destination = destination;
             this.plane = plane;
         }
+<<<<<<< HEAD
+=======
+
+        public Flight(string location, string destination, Fighter plane)
+        {
+            Console.WriteLine("Fighter!");
+          
+        }
+
+>>>>>>> test
         public float GetTime()
             => plane.TimeNeeded(Distance, plane.GetSpeed);
 
