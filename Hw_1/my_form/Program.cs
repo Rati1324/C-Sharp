@@ -14,6 +14,7 @@ namespace my_form
         [STAThread]
         static void Main()
         {
+
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
