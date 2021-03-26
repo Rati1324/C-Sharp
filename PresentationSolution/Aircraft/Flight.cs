@@ -29,16 +29,6 @@ namespace AircraftNspace
             this.destination = destination;
             this.plane = plane;
         }
-<<<<<<< HEAD
-=======
-
-        public Flight(string location, string destination, Fighter plane)
-        {
-            Console.WriteLine("Fighter!");
-          
-        }
-
->>>>>>> test
         public float GetTime()
             => plane.TimeNeeded(Distance, plane.GetSpeed);
 
