@@ -11,6 +11,7 @@ namespace Train
 
         public static int Passengers(int NumOfCoach, int PersonPerCoach)
         {
+
             if (NumOfCoach <= 0 || PersonPerCoach <= 0) throw new Exception("No negative numbers allowed");
             return NumOfCoach * PersonPerCoach;
         }
