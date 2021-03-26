@@ -31,6 +31,7 @@ namespace AircraftNspace
         }
         public float GetTime()
             => plane.TimeNeeded(Distance, plane.GetSpeed);
+
         public float GetFuel()
             => plane.FuelNeeded(Distance, plane.GetFuel, plane.GetSpeed);
 
