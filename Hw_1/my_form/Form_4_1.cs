@@ -51,7 +51,6 @@ namespace my_form
         }
         private void Add_Click(object sender, EventArgs e)
         {
-
             var new_elem = new TextBox();
             temp = new_elem;
             new_elem.Name = "textBox" + i.ToString();
