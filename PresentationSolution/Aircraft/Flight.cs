@@ -24,7 +24,6 @@ namespace AircraftNspace
         public int Distance { get => distance; set { distance = value; } }
         public Flight(string location, string destination, Civilian plane)
         {
-
             Console.WriteLine("Civilian!");
             this.location = location;
             this.destination = destination;
