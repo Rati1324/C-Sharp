@@ -1,0 +1,7 @@
+C:\Users\rati\source\repos\Hw_4Solution\Hw_4\bin\Debug\Hw_4.exe.config
+C:\Users\rati\source\repos\Hw_4Solution\Hw_4\bin\Debug\Hw_4.exe
+C:\Users\rati\source\repos\Hw_4Solution\Hw_4\bin\Debug\Hw_4.pdb
+C:\Users\rati\source\repos\Hw_4Solution\Hw_4\obj\Debug\Hw_4.csprojAssemblyReference.cache
+C:\Users\rati\source\repos\Hw_4Solution\Hw_4\obj\Debug\Hw_4.csproj.CoreCompileInputs.cache
+C:\Users\rati\source\repos\Hw_4Solution\Hw_4\obj\Debug\Hw_4.exe
+C:\Users\rati\source\repos\Hw_4Solution\Hw_4\obj\Debug\Hw_4.pdb
