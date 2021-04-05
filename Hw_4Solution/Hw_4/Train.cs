@@ -13,13 +13,6 @@ namespace Hw_4
 
     public class Child1 : Train
     {
-        public float Speed;
-        public float Time;
-        public Child1(float Speed, float Time)
-        {
-            this.Speed = Speed;
-            this.Time = Time;
-        }
         public override float Calc(float Speed, float Time)
             => Speed * Time;
     }
