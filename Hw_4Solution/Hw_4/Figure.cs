@@ -6,14 +6,22 @@ using System.Threading.Tasks;
 
 namespace Hw_4
 {
+
     public abstract class Figure
     {
-        public abstract float Perimetri(float A, float B, float C, float D);
+        public abstract float Perimeter(float a, float b, float c, float d);
     }
 
-    public class Rectangle : Figure
+    public class Rectangle: Figure
     {
-        public override float Perimetri(float A, float B, float C, float D)
-            => A + B + C + D;
+        public override float Perimeter(float a, float b, float c, float d)
+            => a + b + c + d;
     }
+
+    public class Triangle: Figure
+    {
+        public override float Perimeter(float a, float b, float c, float d = 0)
+            => a + b + c;
+    }
+
 }
