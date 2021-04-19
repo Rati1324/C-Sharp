@@ -1,0 +1,10 @@
+C:\Users\rati\source\repos\MidtermSolution\Midterm\bin\Debug\Midterm.exe.config
+C:\Users\rati\source\repos\MidtermSolution\Midterm\bin\Debug\Midterm.exe
+C:\Users\rati\source\repos\MidtermSolution\Midterm\bin\Debug\Midterm.pdb
+C:\Users\rati\source\repos\MidtermSolution\Midterm\obj\Debug\Midterm.csprojAssemblyReference.cache
+C:\Users\rati\source\repos\MidtermSolution\Midterm\obj\Debug\Midterm.csproj.CoreCompileInputs.cache
+C:\Users\rati\source\repos\MidtermSolution\Midterm\obj\Debug\Midterm.exe
+C:\Users\rati\source\repos\MidtermSolution\Midterm\obj\Debug\Midterm.pdb
+C:\Users\rati\source\repos\MidtermSolution\Midterm\bin\Debug\ConvertMoney.dll
+C:\Users\rati\source\repos\MidtermSolution\Midterm\bin\Debug\ConvertMoney.pdb
+C:\Users\rati\source\repos\MidtermSolution\Midterm\obj\Debug\Midterm.csproj.CopyComplete

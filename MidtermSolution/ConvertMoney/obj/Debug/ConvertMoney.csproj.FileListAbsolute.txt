@@ -1,0 +1,6 @@
+C:\Users\rati\source\repos\MidtermSolution\ConvertMoney\bin\Debug\ConvertMoney.dll
+C:\Users\rati\source\repos\MidtermSolution\ConvertMoney\bin\Debug\ConvertMoney.pdb
+C:\Users\rati\source\repos\MidtermSolution\ConvertMoney\obj\Debug\ConvertMoney.csprojAssemblyReference.cache
+C:\Users\rati\source\repos\MidtermSolution\ConvertMoney\obj\Debug\ConvertMoney.csproj.CoreCompileInputs.cache
+C:\Users\rati\source\repos\MidtermSolution\ConvertMoney\obj\Debug\ConvertMoney.dll
+C:\Users\rati\source\repos\MidtermSolution\ConvertMoney\obj\Debug\ConvertMoney.pdb
