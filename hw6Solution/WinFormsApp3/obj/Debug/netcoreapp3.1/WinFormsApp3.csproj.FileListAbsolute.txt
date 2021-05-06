@@ -1,6 +1,0 @@
-C:\Users\rati\source\repos\hw6Solution\WinFormsApp3\obj\Debug\netcoreapp3.1\WinFormsApp3.csprojAssemblyReference.cache
-C:\Users\rati\source\repos\hw6Solution\WinFormsApp3\obj\Debug\netcoreapp3.1\Advanced_CSharp_exercises.frmMovableButtons.resources
-C:\Users\rati\source\repos\hw6Solution\WinFormsApp3\obj\Debug\netcoreapp3.1\WinFormsApp3.csproj.GenerateResource.cache
-C:\Users\rati\source\repos\hw6Solution\WinFormsApp3\obj\Debug\netcoreapp3.1\WinFormsApp3.AssemblyInfoInputs.cache
-C:\Users\rati\source\repos\hw6Solution\WinFormsApp3\obj\Debug\netcoreapp3.1\WinFormsApp3.AssemblyInfo.cs
-C:\Users\rati\source\repos\hw6Solution\WinFormsApp3\obj\Debug\netcoreapp3.1\WinFormsApp3.csproj.CoreCompileInputs.cache

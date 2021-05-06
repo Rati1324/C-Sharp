@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rati\\source\\repos\\C-Sharp\\hw6Solution\\Purchases\\Purchases.csproj": {}
+    "C:\\Users\\rati\\source\\repos\\C-Sharp\\hw6Solution\\frmMovableButtons\\frmMovableButtons.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rati\\source\\repos\\C-Sharp\\hw6Solution\\Purchases\\Purchases.csproj": {
+    "C:\\Users\\rati\\source\\repos\\C-Sharp\\hw6Solution\\frmMovableButtons\\frmMovableButtons.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rati\\source\\repos\\C-Sharp\\hw6Solution\\Purchases\\Purchases.csproj",
-        "projectName": "Purchases",
-        "projectPath": "C:\\Users\\rati\\source\\repos\\C-Sharp\\hw6Solution\\Purchases\\Purchases.csproj",
+        "projectUniqueName": "C:\\Users\\rati\\source\\repos\\C-Sharp\\hw6Solution\\frmMovableButtons\\frmMovableButtons.csproj",
+        "projectName": "frmMovableButtons",
+        "projectPath": "C:\\Users\\rati\\source\\repos\\C-Sharp\\hw6Solution\\frmMovableButtons\\frmMovableButtons.csproj",
         "packagesPath": "C:\\Users\\rati\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rati\\source\\repos\\C-Sharp\\hw6Solution\\Purchases\\obj\\",
+        "outputPath": "C:\\Users\\rati\\source\\repos\\C-Sharp\\hw6Solution\\frmMovableButtons\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rati\\AppData\\Roaming\\NuGet\\NuGet.Config",

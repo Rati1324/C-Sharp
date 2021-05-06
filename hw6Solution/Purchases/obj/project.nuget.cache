@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1YFpgNOc70wMoFArk7OYiuvG2kAEzM2Bt5PRbpJSmdm9hyxLOYqxnVrwOkMKdmnTkhDXB8ZbMYH95drAdi4Xdw==",
+  "dgSpecHash": "bAxBoNFLcLs4oVyYr/jTr5v8M9LjAkcULPwkhd+P5e4RGh034sm1nyP2+t9hvF89tVUn3X9mDTyb26WOTpQz3A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rati\\source\\repos\\hw6Solution\\Purchases\\Purchases.csproj",
+  "projectFilePath": "C:\\Users\\rati\\source\\repos\\C-Sharp\\hw6Solution\\Purchases\\Purchases.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

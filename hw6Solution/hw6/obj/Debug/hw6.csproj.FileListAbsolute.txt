@@ -1,7 +1,0 @@
-C:\Users\rati\source\repos\hw6Solution\hw6\bin\Debug\hw6.exe.config
-C:\Users\rati\source\repos\hw6Solution\hw6\bin\Debug\hw6.exe
-C:\Users\rati\source\repos\hw6Solution\hw6\bin\Debug\hw6.pdb
-C:\Users\rati\source\repos\hw6Solution\hw6\obj\Debug\hw6.csprojAssemblyReference.cache
-C:\Users\rati\source\repos\hw6Solution\hw6\obj\Debug\hw6.csproj.CoreCompileInputs.cache
-C:\Users\rati\source\repos\hw6Solution\hw6\obj\Debug\hw6.exe
-C:\Users\rati\source\repos\hw6Solution\hw6\obj\Debug\hw6.pdb
