@@ -1,0 +1,7 @@
+C:\Users\rati\source\repos\CurrentDolution\Current\bin\Debug\Current.exe.config
+C:\Users\rati\source\repos\CurrentDolution\Current\bin\Debug\Current.exe
+C:\Users\rati\source\repos\CurrentDolution\Current\bin\Debug\Current.pdb
+C:\Users\rati\source\repos\CurrentDolution\Current\obj\Debug\Current.csprojAssemblyReference.cache
+C:\Users\rati\source\repos\CurrentDolution\Current\obj\Debug\Current.csproj.CoreCompileInputs.cache
+C:\Users\rati\source\repos\CurrentDolution\Current\obj\Debug\Current.exe
+C:\Users\rati\source\repos\CurrentDolution\Current\obj\Debug\Current.pdb
