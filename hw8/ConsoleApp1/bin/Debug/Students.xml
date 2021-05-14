@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Students>
+ <Student>
+    <Name> 
+		<First>Gio</First>
+		<Last>Giodze</Last>
+	</Name>
+	<Course>Biology</Course>
+	<Gender>Male</Gender>
+	<Semester>3</Semester>
+   <Address>
+      <Street>street 31</Street>
+      <City>London</City>
+    </Address>
+ </Student>
+ 
+ <Student>
+    <Name> 
+		<First>Mari</First>
+		<Last>Maridze</Last>
+	</Name>
+	<Course>Applied Math</Course>
+	<Gender>Female</Gender>
+	<Semester>3</Semester>
+   <Address>
+      <Street>street 32</Street>
+      <City>New York</City>
+    </Address>
+ </Student>
+ 
+ <Student>
+    <Name> 
+		<First>Nino</First>
+		<Last>Ninodze</Last>
+	</Name>
+	<Course>Applied Math</Course>
+	<Gender>Female</Gender>
+	<Semester>1</Semester>
+   <Address>
+      <Street>street 22</Street>
+      <City>Manchester</City>
+    </Address>
+ </Student>
+ 
+ <Student>
+    <Name> 
+		<First>Nika</First>
+		<Last>Nikadze</Last>
+	</Name>
+	<Course>History</Course>
+	<Gender>Male</Gender>
+	<Semester>5</Semester>
+   <Address>
+      <Street>street 12</Street>
+      <City>London</City>
+    </Address>
+ </Student>
+ 
+ <Student>
+    <Name> 
+		<First>Luka</First>
+		<Last>Lukadze</Last>
+	</Name>
+	<Course>Anthropology</Course>
+	<Gender>Male</Gender>
+	<Semester>2</Semester>
+   <Address>
+      <Street>street 31</Street>
+      <City>London</City>
+    </Address>
+ </Student>
+</Students>
