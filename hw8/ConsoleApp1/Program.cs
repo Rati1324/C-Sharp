@@ -47,6 +47,13 @@ namespace ConsoleApp1
                             where y.Value == "London"
                             select y).Count();
             Console.WriteLine(LondonNum);
+
+            Console.WriteLine("\nstudents ordered by GPA");
+            var GPA = students.OrderBy(y => (string)y.Element("GPA")).Reverse();
+            foreach (var item in GPA)
+            {
+                Console.WriteLine((string)item.Element("Name").Element("First") + " " + (string)item.Element("Name").Element("Last") + " " +item.Element("GPA").Value);
+            }
         
 
         }
