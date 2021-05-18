@@ -64,7 +64,6 @@ namespace ConsoleApp1
             Console.WriteLine("\nStudents who study Math");
             foreach (var item in MathMajors) Console.WriteLine(item);
 
-
             var ByGpa = Students.OrderBy(y => y.Element("GPA").Value);
             Console.WriteLine("\nOrdered by GPA");
             foreach (var item in ByGpa) Console.WriteLine(item.Descendants("First").First().Value + " " + item.Descendants("Last").First().Value + " " + item.Element("GPA").Value);
