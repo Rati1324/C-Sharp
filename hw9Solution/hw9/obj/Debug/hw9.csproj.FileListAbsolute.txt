@@ -1,0 +1,7 @@
+C:\Users\rati\source\repos\hw9Solution\hw9\bin\Debug\hw9.exe.config
+C:\Users\rati\source\repos\hw9Solution\hw9\bin\Debug\hw9.exe
+C:\Users\rati\source\repos\hw9Solution\hw9\bin\Debug\hw9.pdb
+C:\Users\rati\source\repos\hw9Solution\hw9\obj\Debug\hw9.csprojAssemblyReference.cache
+C:\Users\rati\source\repos\hw9Solution\hw9\obj\Debug\hw9.csproj.CoreCompileInputs.cache
+C:\Users\rati\source\repos\hw9Solution\hw9\obj\Debug\hw9.exe
+C:\Users\rati\source\repos\hw9Solution\hw9\obj\Debug\hw9.pdb

@@ -24,7 +24,6 @@ namespace ConsoleApp1
                 new Student("34234324233", "Nino", "Ninodze", "Physics", "City6", "Street4", "Female"){GPA = 2.8F },
                 new Student("20203023023", "Nana", "Nanadze", "Math", "City6", "Street5", "Male"){GPA = 3.7F }
             };
-
             XDocument xDoc = new XDocument(
                     new XDeclaration("1.0", "UTF-16", null),
                     new XElement("Students",
