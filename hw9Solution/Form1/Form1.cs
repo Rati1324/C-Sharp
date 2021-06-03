@@ -21,7 +21,7 @@ namespace Form1
         {
             StringBuilder S = new StringBuilder();
             S.Capacity = 50;
-            if (textBox2.Text.Length + textBox1.Text.Length> 50 )
+            if (textBox2.Text.Length + textBox1.Text.Length > 50 )
             {
                 throw new Exception("Max capacity is 50");
             }

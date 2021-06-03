@@ -5,3 +5,10 @@ C:\Users\rati\source\repos\hw10Solution\hw10\obj\Debug\hw10.csprojAssemblyRefere
 C:\Users\rati\source\repos\hw10Solution\hw10\obj\Debug\hw10.csproj.CoreCompileInputs.cache
 C:\Users\rati\source\repos\hw10Solution\hw10\obj\Debug\hw10.exe
 C:\Users\rati\source\repos\hw10Solution\hw10\obj\Debug\hw10.pdb
+C:\Users\rati\source\repos\C-Sharp\hw10Solution\hw10\bin\Debug\hw10.exe.config
+C:\Users\rati\source\repos\C-Sharp\hw10Solution\hw10\bin\Debug\hw10.exe
+C:\Users\rati\source\repos\C-Sharp\hw10Solution\hw10\bin\Debug\hw10.pdb
+C:\Users\rati\source\repos\C-Sharp\hw10Solution\hw10\obj\Debug\hw10.csprojAssemblyReference.cache
+C:\Users\rati\source\repos\C-Sharp\hw10Solution\hw10\obj\Debug\hw10.csproj.CoreCompileInputs.cache
+C:\Users\rati\source\repos\C-Sharp\hw10Solution\hw10\obj\Debug\hw10.exe
+C:\Users\rati\source\repos\C-Sharp\hw10Solution\hw10\obj\Debug\hw10.pdb
