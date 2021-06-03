@@ -10,8 +10,6 @@ namespace Bank
     {
         static void Main(string[] args)
         {
-            AuthUser x = new AuthUser("fuckballs");
-            Console.WriteLine(x.firstName);
         }
     }
 }

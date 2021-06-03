@@ -12,8 +12,9 @@ using System.Windows.Forms;
 
 namespace BankForm
 {
-    public partial class Form1 : Form
+    public partial class RegisterPerson : Form
     {
+        #region validations
         public bool validName(string name)
             => name.Length >= 2 && name.Length <= 50;
         public bool validId(string id)
@@ -55,13 +56,13 @@ namespace BankForm
                 emailError.Text = "Not a valid email";
             }
         }
-
+        #endregion
         public Dictionary<string, List<string>> Cities = new Dictionary<string, List<string>>()
         {
             {"Georgia", new List<string>{ "Tbilisi" }},
             {"USA", new List<string>{ "Illinois", "Philadelphia" }},
         };
-        public Form1()
+        public RegisterPerson()
         {
             InitializeComponent();
             country.Items.Add("Georgia");
@@ -92,6 +93,7 @@ namespace BankForm
 
         private void submit_Click(object sender, EventArgs e)
         {
+            #region calling validation
             if (!validName(firstName.Text)) firstNameError.Text = "Must be between 2 and 50 characters";
             else firstNameError.Text = "";
             if (!validName(lastName.Text)) lastNameError.Text = "Must be between 2 and 50 characters";
@@ -104,6 +106,7 @@ namespace BankForm
             else guarantorIDError.Text = "";
             validPhone();
             validEmail();
+            #endregion
         }
 
       
