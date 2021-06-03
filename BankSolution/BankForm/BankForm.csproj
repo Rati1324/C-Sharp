@@ -46,25 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RegisterPerson.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegisterPerson.Designer.cs">
-      <DependentUpon>RegisterPerson.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegisterAuth.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RegisterAuth.Designer.cs">
-      <DependentUpon>RegisterAuth.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="RegisterAuth.resx">
-      <DependentUpon>RegisterAuth.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RegisterPerson.resx">
-      <DependentUpon>RegisterPerson.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

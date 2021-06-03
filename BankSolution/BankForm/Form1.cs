@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace BankForm
 {
-    public partial class RegisterPerson : Form
+    public partial class Form1 : Form
     {
         #region validations
         public bool validName(string name)
@@ -62,7 +62,7 @@ namespace BankForm
             {"Georgia", new List<string>{ "Tbilisi" }},
             {"USA", new List<string>{ "Illinois", "Philadelphia" }},
         };
-        public RegisterPerson()
+        public Form1()
         {
             InitializeComponent();
             country.Items.Add("Georgia");
@@ -109,7 +109,11 @@ namespace BankForm
             #endregion
         }
 
-      
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panel1.BringToFront();
+        }
 
+        
     }
 }
