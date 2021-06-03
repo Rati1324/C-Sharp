@@ -1,0 +1,6 @@
+C:\Users\rati\source\repos\BankSolution\PhysicalPerson\bin\Debug\PhysicalPerson.dll
+C:\Users\rati\source\repos\BankSolution\PhysicalPerson\bin\Debug\PhysicalPerson.pdb
+C:\Users\rati\source\repos\BankSolution\PhysicalPerson\obj\Debug\PhysicalPerson.csproj.AssemblyReference.cache
+C:\Users\rati\source\repos\BankSolution\PhysicalPerson\obj\Debug\PhysicalPerson.csproj.CoreCompileInputs.cache
+C:\Users\rati\source\repos\BankSolution\PhysicalPerson\obj\Debug\PhysicalPerson.dll
+C:\Users\rati\source\repos\BankSolution\PhysicalPerson\obj\Debug\PhysicalPerson.pdb

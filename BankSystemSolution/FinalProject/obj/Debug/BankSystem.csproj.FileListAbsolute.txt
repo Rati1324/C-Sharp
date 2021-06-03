@@ -1,7 +1,0 @@
-C:\Users\rati\source\repos\FinalProjectSolution\FinalProject\bin\Debug\FinalProject.exe.config
-C:\Users\rati\source\repos\FinalProjectSolution\FinalProject\bin\Debug\FinalProject.exe
-C:\Users\rati\source\repos\FinalProjectSolution\FinalProject\bin\Debug\FinalProject.pdb
-C:\Users\rati\source\repos\FinalProjectSolution\FinalProject\obj\Debug\BankSystem.csprojAssemblyReference.cache
-C:\Users\rati\source\repos\FinalProjectSolution\FinalProject\obj\Debug\BankSystem.csproj.CoreCompileInputs.cache
-C:\Users\rati\source\repos\FinalProjectSolution\FinalProject\obj\Debug\FinalProject.exe
-C:\Users\rati\source\repos\FinalProjectSolution\FinalProject\obj\Debug\FinalProject.pdb
