@@ -5,3 +5,10 @@ C:\Users\rati\source\repos\BankSolution\Bank\obj\Debug\Bank.csproj.AssemblyRefer
 C:\Users\rati\source\repos\BankSolution\Bank\obj\Debug\Bank.csproj.CoreCompileInputs.cache
 C:\Users\rati\source\repos\BankSolution\Bank\obj\Debug\Bank.exe
 C:\Users\rati\source\repos\BankSolution\Bank\obj\Debug\Bank.pdb
+C:\Users\rati\source\repos\C-Sharp\BankSolution\Bank\bin\Debug\Bank.exe.config
+C:\Users\rati\source\repos\C-Sharp\BankSolution\Bank\bin\Debug\Bank.exe
+C:\Users\rati\source\repos\C-Sharp\BankSolution\Bank\bin\Debug\Bank.pdb
+C:\Users\rati\source\repos\C-Sharp\BankSolution\Bank\obj\Debug\Bank.csproj.AssemblyReference.cache
+C:\Users\rati\source\repos\C-Sharp\BankSolution\Bank\obj\Debug\Bank.csproj.CoreCompileInputs.cache
+C:\Users\rati\source\repos\C-Sharp\BankSolution\Bank\obj\Debug\Bank.exe
+C:\Users\rati\source\repos\C-Sharp\BankSolution\Bank\obj\Debug\Bank.pdb

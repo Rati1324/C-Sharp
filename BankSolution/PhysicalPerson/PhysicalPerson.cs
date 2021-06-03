@@ -18,5 +18,6 @@ namespace PhysicalPerson
         private string city;
         private string phone;
         private string email;
+
     }
 }
