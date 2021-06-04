@@ -50,10 +50,9 @@ namespace BankForm
             cityPerson.SelectedIndex = 0;
         }
 
-        private void submit_Click(object sender, EventArgs e)
+        private void registerPerson_Click(object sender, EventArgs e)
         {
-
-            #region calling validation for person.
+            #region calling validations for person registration.
             firstNameErrorPerson.Text = Validations.validName(firstNamePerson.Text);
             lastNameErrorPerson.Text = Validations.validName(lastNamePerson.Text);
             idErrorPerson.Text = Validations.validId(idPerson.Text);
@@ -78,6 +77,22 @@ namespace BankForm
             userLoginTab.Hide();
             userRegisterTab.Show();
         }
+
+        private void registerUser_Click(object sender, EventArgs e)
+        {
+            //Account.AuthUser A = new Account.AuthUser()
+            #region calling validations for user registration.
+            firstNameErrorUser.Text = Validations.validName(firstNameUser.Text);
+            lastNameErrorUser.Text = Validations.validName(lastNameUser.Text);
+            idErrorUser.Text = Validations.validId(idUser.Text);
+            dobErrorUser.Text = Validations.validDob(dobUser.Value, genderUser.Text);
+            guarantorIDError.Text = Validations.validId(guarantorID.Text);
+            phoneErrorUser.Text = Validations.validPhone(phoneUser.Text);
+            emailErrorUser.Text = Validations.validEmail(emailUser.Text);
+            #endregion
+        }
+
+
     }
 }
 

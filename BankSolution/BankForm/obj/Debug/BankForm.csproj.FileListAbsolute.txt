@@ -18,3 +18,6 @@ C:\Users\rati\source\repos\C-Sharp\BankSolution\BankForm\obj\Debug\BankForm.cspr
 C:\Users\rati\source\repos\C-Sharp\BankSolution\BankForm\obj\Debug\BankForm.exe
 C:\Users\rati\source\repos\C-Sharp\BankSolution\BankForm\obj\Debug\BankForm.pdb
 C:\Users\rati\source\repos\C-Sharp\BankSolution\BankForm\obj\Debug\BankForm.Form1.resources
+C:\Users\rati\source\repos\C-Sharp\BankSolution\BankForm\bin\Debug\Account.dll
+C:\Users\rati\source\repos\C-Sharp\BankSolution\BankForm\bin\Debug\Account.pdb
+C:\Users\rati\source\repos\C-Sharp\BankSolution\BankForm\obj\Debug\BankForm.csproj.CopyComplete

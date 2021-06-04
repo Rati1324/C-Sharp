@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bank
+namespace Account
 {
-    class AuthUser: PhysicalPerson
+    public class AuthUser: PhysicalPerson
     {
         private string password;
         private string department;
