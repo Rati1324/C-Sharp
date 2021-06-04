@@ -155,7 +155,7 @@ namespace BankForm
             this.guarantorRelation.TabIndex = 9;
             this.guarantorRelation.DropDownStyle = ComboBoxStyle.DropDownList;
             this.guarantorRelation.SelectedIndex = 0;
-            //this.guarantorRelation.
+
             // 
             // label11
             // 
@@ -219,7 +219,7 @@ namespace BankForm
             this.personRegisterPanel.Controls.Add(this.guarantorRelation);
             this.personRegisterPanel.Controls.Add(this.label10);
             this.personRegisterPanel.Controls.Add(this.label9);
-            this.personRegisterPanel.Location = new System.Drawing.Point(237, 45);
+            this.personRegisterPanel.Location = new System.Drawing.Point(251, 23);
             this.personRegisterPanel.Name = "personRegisterPanel";
             this.personRegisterPanel.Size = new System.Drawing.Size(482, 539);
             this.personRegisterPanel.TabIndex = 15;
@@ -346,12 +346,12 @@ namespace BankForm
             // 
             // cityPerson
             // 
+            this.cityPerson.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cityPerson.FormattingEnabled = true;
             this.cityPerson.Location = new System.Drawing.Point(134, 313);
             this.cityPerson.Name = "cityPerson";
             this.cityPerson.Size = new System.Drawing.Size(168, 21);
             this.cityPerson.TabIndex = 56;
-            this.cityPerson.DropDownStyle = ComboBoxStyle.DropDownList;
             // 
             // genderPerson
             // 
@@ -410,6 +410,7 @@ namespace BankForm
             // 
             // countryPerson
             // 
+            this.countryPerson.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.countryPerson.FormattingEnabled = true;
             this.countryPerson.Items.AddRange(new object[] {
             "Georgia",
@@ -550,7 +551,7 @@ namespace BankForm
             this.userRegisterPanel.Controls.Add(this.label15);
             this.userRegisterPanel.Controls.Add(this.passwordConfirm);
             this.userRegisterPanel.Controls.Add(this.passwordUser);
-            this.userRegisterPanel.Location = new System.Drawing.Point(81, 116);
+            this.userRegisterPanel.Location = new System.Drawing.Point(284, 12);
             this.userRegisterPanel.Name = "userRegisterPanel";
             this.userRegisterPanel.Size = new System.Drawing.Size(482, 592);
             this.userRegisterPanel.TabIndex = 16;
@@ -888,9 +889,9 @@ namespace BankForm
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1020, 632);
             this.Controls.Add(this.personRegisterPanel);
+            this.Controls.Add(this.userRegisterPanel);
             this.Controls.Add(this.userRegisterTab);
             this.Controls.Add(this.userLoginTab);
-            this.Controls.Add(this.userRegisterPanel);
             this.Controls.Add(this.loginPanel);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -985,4 +986,3 @@ namespace BankForm
         private System.Windows.Forms.ComboBox role;
     }
 }
-
