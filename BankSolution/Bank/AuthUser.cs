@@ -11,7 +11,6 @@ namespace Bank
         private string password;
         private string department;
         private string role;
-
         public AuthUser(string firstName, string lastName):base(firstName, lastName)
         {
 
