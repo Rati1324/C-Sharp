@@ -182,7 +182,9 @@ namespace BankForm
             // 
             // personRegisterPanel
             // 
+            this.personRegisterPanel.Controls.Add(this.loginPanel);
             this.personRegisterPanel.Controls.Add(this.phonePerson);
+            this.personRegisterPanel.Controls.Add(this.userRegisterPanel);
             this.personRegisterPanel.Controls.Add(this.firstNamePerson);
             this.personRegisterPanel.Controls.Add(this.phoneErrorPerson);
             this.personRegisterPanel.Controls.Add(this.dobErrorPerson);
@@ -221,7 +223,6 @@ namespace BankForm
             // 
             // userRegisterPanel
             // 
-            this.userRegisterPanel.Controls.Add(this.loginPanel);
             this.userRegisterPanel.Controls.Add(this.label30);
             this.userRegisterPanel.Controls.Add(this.button1);
             this.userRegisterPanel.Controls.Add(this.textBox3);
@@ -253,7 +254,7 @@ namespace BankForm
             this.userRegisterPanel.Controls.Add(this.label15);
             this.userRegisterPanel.Controls.Add(this.textBox2);
             this.userRegisterPanel.Controls.Add(this.textBox1);
-            this.userRegisterPanel.Location = new System.Drawing.Point(226, 49);
+            this.userRegisterPanel.Location = new System.Drawing.Point(2, 0);
             this.userRegisterPanel.Name = "userRegisterPanel";
             this.userRegisterPanel.Size = new System.Drawing.Size(482, 539);
             this.userRegisterPanel.TabIndex = 16;
@@ -732,7 +733,7 @@ namespace BankForm
             this.loginPanel.Controls.Add(this.label1);
             this.loginPanel.Location = new System.Drawing.Point(0, 0);
             this.loginPanel.Name = "loginPanel";
-            this.loginPanel.Size = new System.Drawing.Size(482, 539);
+            this.loginPanel.Size = new System.Drawing.Size(511, 561);
             this.loginPanel.TabIndex = 17;
             // 
             // button2
@@ -812,7 +813,6 @@ namespace BankForm
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1020, 632);
             this.Controls.Add(this.userRegisterTab);
-            this.Controls.Add(this.userRegisterPanel);
             this.Controls.Add(this.personRegisterPanel);
             this.Controls.Add(this.userLoginTab);
             this.Name = "Form1";

@@ -9,7 +9,7 @@ namespace Bank
     public abstract class PhysicalPerson
     {
         private string guid = Guid.NewGuid().ToString();
-        public string firstName { get; set; }
+        public string firstName;
         private string lastName;
         private string gender;
         private string id;
@@ -21,10 +21,34 @@ namespace Bank
         private string guarantorRelation;
         private string guarantorId;
 
-        public PhysicalPerson(string firstName, string lastName)
+        public PhysicalPerson(string firstName, string lastName, string gender, string id, DateTime dateOfBirth, 
+            string country, string city, string phone, string email, string guarantorRelation, string guarantorId)
         {
             this.firstName = firstName;
-            //this.lastName = lastName;
+            this.lastName = lastName;
+            this.gender = gender;
+            this.id = id;
+            this.dateOfBirth = dateOfBirth;
+            this.country = country;
+            this.city = city;
+            this.phone = phone;
+            this.email = email;
+            this.guarantorRelation = guarantorRelation;
+            this.guarantorId = guarantorId;
+        }
+
+        public PhysicalPerson(string firstName, string lastName, string gender, string id, DateTime dateOfBirth,
+            string country, string city, string phone, string email)
+        {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.gender = gender;
+            this.id = id;
+            this.dateOfBirth = dateOfBirth;
+            this.country = country;
+            this.city = city;
+            this.phone = phone;
+            this.email = email;
         }
 
     }
