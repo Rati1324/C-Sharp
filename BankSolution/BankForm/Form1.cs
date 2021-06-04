@@ -53,7 +53,7 @@ namespace BankForm
         private void submit_Click(object sender, EventArgs e)
         {
 
-            #region calling validation
+            #region calling validation for person.
             firstNameErrorPerson.Text = Validations.validName(firstNamePerson.Text);
             lastNameErrorPerson.Text = Validations.validName(lastNamePerson.Text);
             idErrorPerson.Text = Validations.validId(idPerson.Text);
@@ -64,17 +64,19 @@ namespace BankForm
             #endregion
         }
 
-        private void registerPers_Click(object sender, EventArgs e)
+        private void userRegisterTab_Click(object sender, EventArgs e)
         {
-            panel1.BringToFront();
+            loginPanel.Hide();
+            userRegisterTab.Hide();
+            userLoginTab.Show();
         }
 
-        private void registerUser_Click(object sender, EventArgs e)
+        private void userLoginTab_Click(object sender, EventArgs e)
         {
-            panel2.BringToFront();
+            loginPanel.Show();
+            userLoginTab.Hide();
+            userRegisterTab.Show();
         }
-
-        
     }
 }
 
