@@ -81,15 +81,16 @@ namespace BankForm
 
         private void userRegisterTab_Click(object sender, EventArgs e)
         {
-            //loginPanel.Hide();
-            userRegisterPanel.BringToFront();
+            loginPanel.Hide();
+            //userRegisterPanel.BringToFront();
             userRegisterTab.Hide();
             userLoginTab.Show();
         }
 
         private void userLoginTab_Click(object sender, EventArgs e)
         {
-            loginPanel.BringToFront();
+            loginPanel.Show();
+            //loginPanel.BringToFront();
             userLoginTab.Hide();
             userRegisterTab.Show();
         }
