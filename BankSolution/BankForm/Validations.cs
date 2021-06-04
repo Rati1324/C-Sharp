@@ -34,7 +34,7 @@ namespace BankForm
             int age = DateTime.Today.Year - dob.Year;
             if (age < 18) error = "You must be older than 18";
             else if (gender == "Male" && age >= 65) error = "You must younger than 65";
-            else if (gender == "Female" && age >= 60) error = "You must be younger than 60(F)";
+            else if (gender == "Female" && age >= 60) error = "You must be younger than 60";
             return error;
         }
 

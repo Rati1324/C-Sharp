@@ -153,9 +153,6 @@ namespace BankForm
             this.guarantorRelation.Name = "guarantorRelation";
             this.guarantorRelation.Size = new System.Drawing.Size(77, 21);
             this.guarantorRelation.TabIndex = 9;
-            this.guarantorRelation.DropDownStyle = ComboBoxStyle.DropDownList;
-            this.guarantorRelation.SelectedIndex = 0;
-
             // 
             // label11
             // 
@@ -219,7 +216,7 @@ namespace BankForm
             this.personRegisterPanel.Controls.Add(this.guarantorRelation);
             this.personRegisterPanel.Controls.Add(this.label10);
             this.personRegisterPanel.Controls.Add(this.label9);
-            this.personRegisterPanel.Location = new System.Drawing.Point(251, 23);
+            this.personRegisterPanel.Location = new System.Drawing.Point(615, 52);
             this.personRegisterPanel.Name = "personRegisterPanel";
             this.personRegisterPanel.Size = new System.Drawing.Size(482, 539);
             this.personRegisterPanel.TabIndex = 15;
@@ -364,8 +361,6 @@ namespace BankForm
             this.genderPerson.Name = "genderPerson";
             this.genderPerson.Size = new System.Drawing.Size(168, 21);
             this.genderPerson.TabIndex = 60;
-            this.genderPerson.DropDownStyle = ComboBoxStyle.DropDownList;
-            this.genderPerson.SelectedIndex = 0;
             // 
             // dobPerson
             // 
@@ -420,8 +415,6 @@ namespace BankForm
             this.countryPerson.Size = new System.Drawing.Size(168, 21);
             this.countryPerson.TabIndex = 57;
             this.countryPerson.SelectedIndexChanged += new System.EventHandler(this.countryPerson_SelectedIndexChanged);
-            this.countryPerson.DropDownStyle = ComboBoxStyle.DropDownList;
-            this.countryPerson.SelectedIndex = 0;
             // 
             // label35
             // 
@@ -458,7 +451,7 @@ namespace BankForm
             this.loginPanel.Controls.Add(this.textBox9);
             this.loginPanel.Controls.Add(this.textBox8);
             this.loginPanel.Controls.Add(this.label1);
-            this.loginPanel.Location = new System.Drawing.Point(237, 36);
+            this.loginPanel.Location = new System.Drawing.Point(615, 52);
             this.loginPanel.Name = "loginPanel";
             this.loginPanel.Size = new System.Drawing.Size(511, 539);
             this.loginPanel.TabIndex = 17;
@@ -551,7 +544,7 @@ namespace BankForm
             this.userRegisterPanel.Controls.Add(this.label15);
             this.userRegisterPanel.Controls.Add(this.passwordConfirm);
             this.userRegisterPanel.Controls.Add(this.passwordUser);
-            this.userRegisterPanel.Location = new System.Drawing.Point(284, 12);
+            this.userRegisterPanel.Location = new System.Drawing.Point(127, -1);
             this.userRegisterPanel.Name = "userRegisterPanel";
             this.userRegisterPanel.Size = new System.Drawing.Size(482, 592);
             this.userRegisterPanel.TabIndex = 16;
@@ -803,6 +796,7 @@ namespace BankForm
             this.countryUser.Name = "countryUser";
             this.countryUser.Size = new System.Drawing.Size(168, 21);
             this.countryUser.TabIndex = 33;
+            this.countryUser.SelectedIndexChanged += new System.EventHandler(this.countryUser_SelectedIndexChanged);
             // 
             // label27
             // 
@@ -888,11 +882,11 @@ namespace BankForm
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1020, 632);
-            this.Controls.Add(this.personRegisterPanel);
             this.Controls.Add(this.userRegisterPanel);
+            this.Controls.Add(this.personRegisterPanel);
             this.Controls.Add(this.userRegisterTab);
-            this.Controls.Add(this.userLoginTab);
             this.Controls.Add(this.loginPanel);
+            this.Controls.Add(this.userLoginTab);
             this.Name = "Form1";
             this.Text = "Form1";
             this.personRegisterPanel.ResumeLayout(false);

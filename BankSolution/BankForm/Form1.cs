@@ -24,6 +24,40 @@ namespace BankForm
         public Form1()
         {
             InitializeComponent();
+            // person country and gender values are alredy added in degisner.cs for some reason????? 
+            //countryPerson.Items.AddRange(new object[] { "Georgia", "Tbilisi" });
+            countryPerson.DropDownStyle = ComboBoxStyle.DropDownList;
+            countryPerson.SelectedIndex = 0;
+
+            cityPerson.DropDownStyle = ComboBoxStyle.DropDownList;
+            cityPerson.SelectedIndex = 0;
+
+            genderPerson.DropDownStyle = ComboBoxStyle.DropDownList;
+            genderPerson.SelectedIndex = 0;
+
+            guarantorRelation.DropDownStyle = ComboBoxStyle.DropDownList;
+            guarantorRelation.SelectedIndex = 0;
+
+            genderUser.Items.AddRange(new object[] { "Male", "Female" });
+            genderUser.DropDownStyle = ComboBoxStyle.DropDownList;
+            genderUser.SelectedIndex = 0;
+
+            countryUser.Items.AddRange(new object[] { "Georgia", "USA" });
+            countryUser.DropDownStyle = ComboBoxStyle.DropDownList;
+            countryUser.SelectedIndex = 0;
+
+            cityUser.DropDownStyle = ComboBoxStyle.DropDownList;
+            cityUser.SelectedIndex = 0;
+
+            // these also get added automaticaly
+            //branch.Items.AddRange(new object[] { "Branch 1", "Branch 2", "Branch 3" });
+            //role.Items.AddRange(new object[] { "Manager", "Bank teller", "Customer Support" });
+
+            branch.DropDownStyle = ComboBoxStyle.DropDownList;
+            branch.SelectedIndex = 0;
+
+            role.DropDownStyle = ComboBoxStyle.DropDownList;
+            role.SelectedIndex = 0;
         }
 
         private void countryPerson_SelectedIndexChanged(object sender, EventArgs e)
@@ -33,8 +67,16 @@ namespace BankForm
             {
                 cityPerson.Items.Add(elem);
             }
-            // this doesnt work in designers for some reason
-            cityPerson.SelectedIndex = 0;
+        }
+
+        private void countryUser_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cityUser.Items.Clear();
+            foreach (var elem in Cities[countryUser.Text])
+            {
+                cityUser.Items.Add(elem);
+            }
+            
         }
 
         private void userRegisterTab_Click(object sender, EventArgs e)
@@ -79,7 +121,7 @@ namespace BankForm
             #endregion
         }
 
-       
+        
     }
 }
 
