@@ -1,4 +1,6 @@
 ﻿
+using System.Windows.Forms;
+
 namespace BankForm
 {
     partial class Form1
@@ -37,13 +39,7 @@ namespace BankForm
             this.guarantorIDError = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.personRegisterPanel = new System.Windows.Forms.Panel();
-            this.loginPanel = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.registerPerson = new System.Windows.Forms.Button();
             this.phonePerson = new System.Windows.Forms.TextBox();
             this.firstNamePerson = new System.Windows.Forms.TextBox();
             this.phoneErrorPerson = new System.Windows.Forms.Label();
@@ -68,7 +64,18 @@ namespace BankForm
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.firstNameErrorPerson = new System.Windows.Forms.Label();
+            this.loginPanel = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.userRegisterPanel = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.role = new System.Windows.Forms.ComboBox();
+            this.branch = new System.Windows.Forms.ComboBox();
             this.label30 = new System.Windows.Forms.Label();
             this.registerUser = new System.Windows.Forms.Button();
             this.phoneUser = new System.Windows.Forms.TextBox();
@@ -102,7 +109,6 @@ namespace BankForm
             this.passwordUser = new System.Windows.Forms.TextBox();
             this.userRegisterTab = new System.Windows.Forms.Button();
             this.userLoginTab = new System.Windows.Forms.Button();
-            this.registerPerson = new System.Windows.Forms.Button();
             this.personRegisterPanel.SuspendLayout();
             this.loginPanel.SuspendLayout();
             this.userRegisterPanel.SuspendLayout();
@@ -135,12 +141,21 @@ namespace BankForm
             // 
             // guarantorRelation
             // 
+            this.guarantorRelation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.guarantorRelation.FormattingEnabled = true;
+            this.guarantorRelation.Items.AddRange(new object[] {
+            "Parent",
+            "Spouse",
+            "Friend",
+            "Relative",
+            "Other"});
             this.guarantorRelation.Location = new System.Drawing.Point(134, 455);
             this.guarantorRelation.Name = "guarantorRelation";
             this.guarantorRelation.Size = new System.Drawing.Size(77, 21);
             this.guarantorRelation.TabIndex = 9;
-            this.guarantorRelation.SelectedIndexChanged += new System.EventHandler(this.country_SelectedIndexChanged);
+            this.guarantorRelation.DropDownStyle = ComboBoxStyle.DropDownList;
+            this.guarantorRelation.SelectedIndex = 0;
+            //this.guarantorRelation.
             // 
             // label11
             // 
@@ -173,7 +188,6 @@ namespace BankForm
             // personRegisterPanel
             // 
             this.personRegisterPanel.Controls.Add(this.registerPerson);
-            this.personRegisterPanel.Controls.Add(this.loginPanel);
             this.personRegisterPanel.Controls.Add(this.phonePerson);
             this.personRegisterPanel.Controls.Add(this.firstNamePerson);
             this.personRegisterPanel.Controls.Add(this.phoneErrorPerson);
@@ -205,74 +219,20 @@ namespace BankForm
             this.personRegisterPanel.Controls.Add(this.guarantorRelation);
             this.personRegisterPanel.Controls.Add(this.label10);
             this.personRegisterPanel.Controls.Add(this.label9);
-            this.personRegisterPanel.Location = new System.Drawing.Point(412, 30);
+            this.personRegisterPanel.Location = new System.Drawing.Point(237, 45);
             this.personRegisterPanel.Name = "personRegisterPanel";
             this.personRegisterPanel.Size = new System.Drawing.Size(482, 539);
             this.personRegisterPanel.TabIndex = 15;
             // 
-            // loginPanel
+            // registerPerson
             // 
-            this.loginPanel.Controls.Add(this.button2);
-            this.loginPanel.Controls.Add(this.label5);
-            this.loginPanel.Controls.Add(this.label2);
-            this.loginPanel.Controls.Add(this.textBox9);
-            this.loginPanel.Controls.Add(this.textBox8);
-            this.loginPanel.Controls.Add(this.label1);
-            this.loginPanel.Location = new System.Drawing.Point(433, 22);
-            this.loginPanel.Name = "loginPanel";
-            this.loginPanel.Size = new System.Drawing.Size(511, 561);
-            this.loginPanel.TabIndex = 17;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(251, 162);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Log in ";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(114, 126);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 13);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "Password:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(114, 83);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "E-mail:";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(176, 123);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(150, 20);
-            this.textBox9.TabIndex = 17;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(176, 80);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(150, 20);
-            this.textBox8.TabIndex = 17;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(205, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Log In";
+            this.registerPerson.Location = new System.Drawing.Point(231, 497);
+            this.registerPerson.Name = "registerPerson";
+            this.registerPerson.Size = new System.Drawing.Size(75, 23);
+            this.registerPerson.TabIndex = 19;
+            this.registerPerson.Text = "Register";
+            this.registerPerson.UseVisualStyleBackColor = true;
+            this.registerPerson.Click += new System.EventHandler(this.registerPerson_Click);
             // 
             // phonePerson
             // 
@@ -391,14 +351,21 @@ namespace BankForm
             this.cityPerson.Name = "cityPerson";
             this.cityPerson.Size = new System.Drawing.Size(168, 21);
             this.cityPerson.TabIndex = 56;
+            this.cityPerson.DropDownStyle = ComboBoxStyle.DropDownList;
             // 
             // genderPerson
             // 
+            this.genderPerson.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.genderPerson.FormattingEnabled = true;
+            this.genderPerson.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
             this.genderPerson.Location = new System.Drawing.Point(134, 148);
             this.genderPerson.Name = "genderPerson";
             this.genderPerson.Size = new System.Drawing.Size(168, 21);
             this.genderPerson.TabIndex = 60;
+            this.genderPerson.DropDownStyle = ComboBoxStyle.DropDownList;
+            this.genderPerson.SelectedIndex = 0;
             // 
             // dobPerson
             // 
@@ -444,10 +411,16 @@ namespace BankForm
             // countryPerson
             // 
             this.countryPerson.FormattingEnabled = true;
+            this.countryPerson.Items.AddRange(new object[] {
+            "Georgia",
+            "USA"});
             this.countryPerson.Location = new System.Drawing.Point(134, 274);
             this.countryPerson.Name = "countryPerson";
             this.countryPerson.Size = new System.Drawing.Size(168, 21);
             this.countryPerson.TabIndex = 57;
+            this.countryPerson.SelectedIndexChanged += new System.EventHandler(this.countryPerson_SelectedIndexChanged);
+            this.countryPerson.DropDownStyle = ComboBoxStyle.DropDownList;
+            this.countryPerson.SelectedIndex = 0;
             // 
             // label35
             // 
@@ -476,9 +449,76 @@ namespace BankForm
             this.firstNameErrorPerson.Size = new System.Drawing.Size(0, 13);
             this.firstNameErrorPerson.TabIndex = 59;
             // 
+            // loginPanel
+            // 
+            this.loginPanel.Controls.Add(this.button2);
+            this.loginPanel.Controls.Add(this.label5);
+            this.loginPanel.Controls.Add(this.label2);
+            this.loginPanel.Controls.Add(this.textBox9);
+            this.loginPanel.Controls.Add(this.textBox8);
+            this.loginPanel.Controls.Add(this.label1);
+            this.loginPanel.Location = new System.Drawing.Point(237, 36);
+            this.loginPanel.Name = "loginPanel";
+            this.loginPanel.Size = new System.Drawing.Size(511, 539);
+            this.loginPanel.TabIndex = 17;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(251, 162);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "Log in ";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(114, 126);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(56, 13);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Password:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(114, 83);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "E-mail:";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(176, 123);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(150, 20);
+            this.textBox9.TabIndex = 17;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(176, 80);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(150, 20);
+            this.textBox8.TabIndex = 17;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(205, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(62, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Log In";
+            // 
             // userRegisterPanel
             // 
-            this.userRegisterPanel.Controls.Add(this.personRegisterPanel);
+            this.userRegisterPanel.Controls.Add(this.label12);
+            this.userRegisterPanel.Controls.Add(this.label6);
+            this.userRegisterPanel.Controls.Add(this.role);
+            this.userRegisterPanel.Controls.Add(this.branch);
             this.userRegisterPanel.Controls.Add(this.label30);
             this.userRegisterPanel.Controls.Add(this.registerUser);
             this.userRegisterPanel.Controls.Add(this.phoneUser);
@@ -510,10 +550,54 @@ namespace BankForm
             this.userRegisterPanel.Controls.Add(this.label15);
             this.userRegisterPanel.Controls.Add(this.passwordConfirm);
             this.userRegisterPanel.Controls.Add(this.passwordUser);
-            this.userRegisterPanel.Location = new System.Drawing.Point(247, 27);
+            this.userRegisterPanel.Location = new System.Drawing.Point(81, 116);
             this.userRegisterPanel.Name = "userRegisterPanel";
-            this.userRegisterPanel.Size = new System.Drawing.Size(482, 539);
+            this.userRegisterPanel.Size = new System.Drawing.Size(482, 592);
             this.userRegisterPanel.TabIndex = 16;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(95, 529);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(32, 13);
+            this.label12.TabIndex = 41;
+            this.label12.Text = "Role:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(84, 494);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(44, 13);
+            this.label6.TabIndex = 41;
+            this.label6.Text = "Branch:";
+            // 
+            // role
+            // 
+            this.role.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.role.FormattingEnabled = true;
+            this.role.Items.AddRange(new object[] {
+            "Manager",
+            "Customer Support",
+            "Bank Teller"});
+            this.role.Location = new System.Drawing.Point(137, 525);
+            this.role.Name = "role";
+            this.role.Size = new System.Drawing.Size(168, 21);
+            this.role.TabIndex = 40;
+            // 
+            // branch
+            // 
+            this.branch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.branch.FormattingEnabled = true;
+            this.branch.Items.AddRange(new object[] {
+            "Branch1",
+            "Branch2",
+            "Branch3"});
+            this.branch.Location = new System.Drawing.Point(137, 491);
+            this.branch.Name = "branch";
+            this.branch.Size = new System.Drawing.Size(168, 21);
+            this.branch.TabIndex = 40;
             // 
             // label30
             // 
@@ -527,7 +611,7 @@ namespace BankForm
             // 
             // registerUser
             // 
-            this.registerUser.Location = new System.Drawing.Point(137, 481);
+            this.registerUser.Location = new System.Drawing.Point(230, 556);
             this.registerUser.Name = "registerUser";
             this.registerUser.Size = new System.Drawing.Size(75, 23);
             this.registerUser.TabIndex = 2;
@@ -798,24 +882,16 @@ namespace BankForm
             this.userLoginTab.UseVisualStyleBackColor = true;
             this.userLoginTab.Click += new System.EventHandler(this.userLoginTab_Click);
             // 
-            // registerPerson
-            // 
-            this.registerPerson.Location = new System.Drawing.Point(231, 497);
-            this.registerPerson.Name = "registerPerson";
-            this.registerPerson.Size = new System.Drawing.Size(75, 23);
-            this.registerPerson.TabIndex = 19;
-            this.registerPerson.Text = "Register";
-            this.registerPerson.UseVisualStyleBackColor = true;
-            this.registerPerson.Click += new System.EventHandler(this.registerPerson_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1020, 632);
+            this.Controls.Add(this.personRegisterPanel);
             this.Controls.Add(this.userRegisterTab);
             this.Controls.Add(this.userLoginTab);
             this.Controls.Add(this.userRegisterPanel);
+            this.Controls.Add(this.loginPanel);
             this.Name = "Form1";
             this.Text = "Form1";
             this.personRegisterPanel.ResumeLayout(false);
@@ -903,6 +979,10 @@ namespace BankForm
         private System.Windows.Forms.Button userRegisterTab;
         private System.Windows.Forms.Button userLoginTab;
         private System.Windows.Forms.Button registerPerson;
+        private System.Windows.Forms.ComboBox branch;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox role;
     }
 }
 
