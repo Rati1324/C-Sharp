@@ -10,14 +10,16 @@ namespace Bank
     {
         private string guid = Guid.NewGuid().ToString();
         public string firstName { get; set; }
-        //private string lastName;
-        //private string gender;
-        //private string id;
-        //private DateTime dateOfBirth = default(DateTime);
-        //private string country;
-        //private string city;
-        //private string phone;
-        //private string email;
+        private string lastName;
+        private string gender;
+        private string id;
+        private DateTime dateOfBirth = default(DateTime);
+        private string country;
+        private string city;
+        private string phone;
+        private string email;
+        private string guarantorRelation;
+        private string guarantorId;
 
         public PhysicalPerson(string firstName, string lastName)
         {

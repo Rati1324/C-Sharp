@@ -23,37 +23,37 @@ namespace BankForm
         {
             int age = DateTime.Today.Year - dob.Year;
             if (age < 18) return false;
-            if (gender.Text == "Male") return age >= 65;
+            if (genderPerson.Text == "Male") return age >= 65;
             return age >= 60;
         }
             
         public void validPhone()
         {
-            string phoneNum = phone.Text;
+            string phoneNum = phonePerson.Text;
             string error = "";
             if (phoneNum.Length != 9 && !Regex.IsMatch(phoneNum, @"^\d+$"))
                 error = "Not a valid phone number";
-            phoneError.Text = error;
+            phoneErrorPerson.Text = error;
         }
 
         public void validEmail()
         {
-            string emailInput= email.Text;
+            string emailInput= emailPerson.Text;
             if (emailInput.Length > 0)
             {
                 try
                 {
                     MailAddress m = new MailAddress(emailInput);
-                    emailError.Text = "";
+                    emailErrorPerson.Text = "";
                 }
                 catch (FormatException)
                 {
-                    emailError.Text = "Not a valid email";
+                    emailErrorPerson.Text = "Not a valid email";
                 }
             }
             else
             {
-                emailError.Text = "Not a valid email";
+                emailErrorPerson.Text = "Not a valid email";
             }
         }
         #endregion
@@ -65,13 +65,13 @@ namespace BankForm
         public Form1()
         {
             InitializeComponent();
-            country.Items.Add("Georgia");
-            country.Items.Add("USA");
-            country.SelectedIndex = 0;
+            countryPerson.Items.Add("Georgia");
+            countryPerson.Items.Add("USA");
+            countryPerson.SelectedIndex = 0;
 
-            gender.Items.Add("Male");
-            gender.Items.Add("Female");
-            gender.SelectedIndex = 0;
+            genderPerson.Items.Add("Male");
+            genderPerson.Items.Add("Female");
+            genderPerson.SelectedIndex = 0;
 
             guarantorRelation.Items.Add("Parent");
             guarantorRelation.Items.Add("Spouse");
@@ -83,25 +83,25 @@ namespace BankForm
 
         private void country_SelectedIndexChanged(object sender, EventArgs e)
         {
-            city.Items.Clear();
-            foreach (var elem in Cities[country.Text])
+            cityPerson.Items.Clear();
+            foreach (var elem in Cities[countryPerson.Text])
             {
-                city.Items.Add(elem);
+                cityPerson.Items.Add(elem);
             }
-            city.SelectedIndex = 0;
+            cityPerson.SelectedIndex = 0;
         }
 
         private void submit_Click(object sender, EventArgs e)
         {
             #region calling validation
-            if (!validName(firstName.Text)) firstNameError.Text = "Must be between 2 and 50 characters";
-            else firstNameError.Text = "";
-            if (!validName(lastName.Text)) lastNameError.Text = "Must be between 2 and 50 characters";
-            else lastNameError.Text = "";
-            if (!validId(ID.Text)) idError.Text = "Not a valid ID";
-            else idError.Text = "";
-            if (!validDob(dob.Value)) dobError.Text = "You must be older than 18 and younger than 65(M)/60(F)";
-            else dobError.Text = "";
+            if (!validName(firstNamePerson.Text)) firstNameErrorPerson.Text = "Must be between 2 and 50 characters";
+            else firstNameErrorPerson.Text = "";
+            if (!validName(lastNamePerson.Text)) lastNameErrorPerson.Text = "Must be between 2 and 50 characters";
+            else lastNameErrorPerson.Text = "";
+            if (!validId(idPerson.Text)) idErrorPerson.Text = "Not a valid ID";
+            else idErrorPerson.Text = "";
+            if (!validDob(dobPerson.Value)) dobErrorPerson.Text = "You must be older than 18 and younger than 65(M)/60(F)";
+            else dobErrorPerson.Text = "";
             if (!validId(guarantorID.Text)) guarantorIDError.Text = "Not a valid ID";
             else guarantorIDError.Text = "";
             validPhone();
@@ -109,9 +109,14 @@ namespace BankForm
             #endregion
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void registerPers_Click(object sender, EventArgs e)
         {
             panel1.BringToFront();
+        }
+
+        private void registerUser_Click(object sender, EventArgs e)
+        {
+            panel2.BringToFront();
         }
 
         

@@ -29,47 +29,47 @@ namespace BankForm
         /// </summary>
         private void InitializeComponent()
         {
-            this.firstName = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lastName = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.ID = new System.Windows.Forms.TextBox();
-            this.labell = new System.Windows.Forms.Label();
-            this.dob = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
-            this.country = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.city = new System.Windows.Forms.ComboBox();
             this.submit = new System.Windows.Forms.Button();
-            this.firstNameError = new System.Windows.Forms.Label();
-            this.lastNameError = new System.Windows.Forms.Label();
-            this.gender = new System.Windows.Forms.ComboBox();
-            this.idError = new System.Windows.Forms.Label();
-            this.dobError = new System.Windows.Forms.Label();
-            this.phone = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.email = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.guarantorID = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.guarantorRelation = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.guarantorIDError = new System.Windows.Forms.Label();
-            this.phoneError = new System.Windows.Forms.Label();
-            this.emailError = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.phonePerson = new System.Windows.Forms.TextBox();
+            this.firstNamePerson = new System.Windows.Forms.TextBox();
+            this.phoneErrorPerson = new System.Windows.Forms.Label();
+            this.dobErrorPerson = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.idErrorPerson = new System.Windows.Forms.Label();
+            this.emailErrorPerson = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.emailPerson = new System.Windows.Forms.TextBox();
+            this.lastNamePerson = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.cityPerson = new System.Windows.Forms.ComboBox();
+            this.genderPerson = new System.Windows.Forms.ComboBox();
+            this.dobPerson = new System.Windows.Forms.DateTimePicker();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.lastNameErrorPerson = new System.Windows.Forms.Label();
+            this.idPerson = new System.Windows.Forms.TextBox();
+            this.countryPerson = new System.Windows.Forms.ComboBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.firstNameErrorPerson = new System.Windows.Forms.Label();
+            this.registerUser = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.registerPers = new System.Windows.Forms.Button();
+            this.label30 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.passwordConfirmError = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -92,121 +92,17 @@ namespace BankForm
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // firstName
-            // 
-            this.firstName.Location = new System.Drawing.Point(134, 66);
-            this.firstName.Name = "firstName";
-            this.firstName.Size = new System.Drawing.Size(168, 20);
-            this.firstName.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(62, 71);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "First Name:";
-            // 
-            // lastName
-            // 
-            this.lastName.Location = new System.Drawing.Point(134, 109);
-            this.lastName.Name = "lastName";
-            this.lastName.Size = new System.Drawing.Size(168, 20);
-            this.lastName.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(62, 113);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "LastName:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(62, 160);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 13);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Gender:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(62, 203);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(21, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "ID:";
-            // 
-            // ID
-            // 
-            this.ID.Location = new System.Drawing.Point(134, 196);
-            this.ID.Name = "ID";
-            this.ID.Size = new System.Drawing.Size(168, 20);
-            this.ID.TabIndex = 2;
-            // 
-            // labell
-            // 
-            this.labell.AutoSize = true;
-            this.labell.Location = new System.Drawing.Point(62, 243);
-            this.labell.Name = "labell";
-            this.labell.Size = new System.Drawing.Size(69, 13);
-            this.labell.TabIndex = 5;
-            this.labell.Text = "Date of Birth:";
-            // 
-            // dob
-            // 
-            this.dob.Location = new System.Drawing.Point(134, 237);
-            this.dob.Name = "dob";
-            this.dob.Size = new System.Drawing.Size(168, 20);
-            this.dob.TabIndex = 6;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(62, 285);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Country:";
-            // 
-            // country
-            // 
-            this.country.FormattingEnabled = true;
-            this.country.Location = new System.Drawing.Point(134, 278);
-            this.country.Name = "country";
-            this.country.Size = new System.Drawing.Size(168, 21);
-            this.country.TabIndex = 9;
-            this.country.SelectedIndexChanged += new System.EventHandler(this.country_SelectedIndexChanged);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(62, 325);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(27, 13);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "City:";
-            // 
-            // city
-            // 
-            this.city.FormattingEnabled = true;
-            this.city.Location = new System.Drawing.Point(134, 317);
-            this.city.Name = "city";
-            this.city.Size = new System.Drawing.Size(168, 21);
-            this.city.TabIndex = 9;
-            // 
             // submit
             // 
-            this.submit.Location = new System.Drawing.Point(65, 497);
+            this.submit.Location = new System.Drawing.Point(133, 496);
             this.submit.Name = "submit";
             this.submit.Size = new System.Drawing.Size(75, 23);
             this.submit.TabIndex = 10;
@@ -214,87 +110,10 @@ namespace BankForm
             this.submit.UseVisualStyleBackColor = true;
             this.submit.Click += new System.EventHandler(this.submit_Click);
             // 
-            // firstNameError
-            // 
-            this.firstNameError.AutoSize = true;
-            this.firstNameError.ForeColor = System.Drawing.Color.Red;
-            this.firstNameError.Location = new System.Drawing.Point(133, 89);
-            this.firstNameError.Name = "firstNameError";
-            this.firstNameError.Size = new System.Drawing.Size(0, 13);
-            this.firstNameError.TabIndex = 11;
-            // 
-            // lastNameError
-            // 
-            this.lastNameError.AutoSize = true;
-            this.lastNameError.ForeColor = System.Drawing.Color.Red;
-            this.lastNameError.Location = new System.Drawing.Point(133, 136);
-            this.lastNameError.Name = "lastNameError";
-            this.lastNameError.Size = new System.Drawing.Size(0, 13);
-            this.lastNameError.TabIndex = 11;
-            // 
-            // gender
-            // 
-            this.gender.FormattingEnabled = true;
-            this.gender.Location = new System.Drawing.Point(134, 152);
-            this.gender.Name = "gender";
-            this.gender.Size = new System.Drawing.Size(168, 21);
-            this.gender.TabIndex = 12;
-            // 
-            // idError
-            // 
-            this.idError.AutoSize = true;
-            this.idError.ForeColor = System.Drawing.Color.Red;
-            this.idError.Location = new System.Drawing.Point(134, 221);
-            this.idError.Name = "idError";
-            this.idError.Size = new System.Drawing.Size(0, 13);
-            this.idError.TabIndex = 13;
-            // 
-            // dobError
-            // 
-            this.dobError.AutoSize = true;
-            this.dobError.BackColor = System.Drawing.Color.Transparent;
-            this.dobError.ForeColor = System.Drawing.Color.Red;
-            this.dobError.Location = new System.Drawing.Point(134, 261);
-            this.dobError.Name = "dobError";
-            this.dobError.Size = new System.Drawing.Size(0, 13);
-            this.dobError.TabIndex = 14;
-            // 
-            // phone
-            // 
-            this.phone.Location = new System.Drawing.Point(134, 357);
-            this.phone.Name = "phone";
-            this.phone.Size = new System.Drawing.Size(168, 20);
-            this.phone.TabIndex = 2;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(62, 361);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(41, 13);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "Phone:";
-            // 
-            // email
-            // 
-            this.email.Location = new System.Drawing.Point(134, 396);
-            this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(168, 20);
-            this.email.TabIndex = 2;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(62, 402);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Email:";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(62, 459);
+            this.label9.Location = new System.Drawing.Point(66, 459);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(57, 13);
             this.label9.TabIndex = 8;
@@ -343,24 +162,6 @@ namespace BankForm
             this.guarantorIDError.Size = new System.Drawing.Size(0, 13);
             this.guarantorIDError.TabIndex = 8;
             // 
-            // phoneError
-            // 
-            this.phoneError.AutoSize = true;
-            this.phoneError.ForeColor = System.Drawing.Color.Red;
-            this.phoneError.Location = new System.Drawing.Point(134, 380);
-            this.phoneError.Name = "phoneError";
-            this.phoneError.Size = new System.Drawing.Size(0, 13);
-            this.phoneError.TabIndex = 8;
-            // 
-            // emailError
-            // 
-            this.emailError.AutoSize = true;
-            this.emailError.ForeColor = System.Drawing.Color.Red;
-            this.emailError.Location = new System.Drawing.Point(136, 419);
-            this.emailError.Name = "emailError";
-            this.emailError.Size = new System.Drawing.Size(0, 13);
-            this.emailError.TabIndex = 8;
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -373,47 +174,264 @@ namespace BankForm
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.phone);
-            this.panel1.Controls.Add(this.firstName);
-            this.panel1.Controls.Add(this.phoneError);
-            this.panel1.Controls.Add(this.dobError);
+            this.panel1.Controls.Add(this.phonePerson);
+            this.panel1.Controls.Add(this.firstNamePerson);
+            this.panel1.Controls.Add(this.phoneErrorPerson);
+            this.panel1.Controls.Add(this.dobErrorPerson);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.idErrorPerson);
+            this.panel1.Controls.Add(this.emailErrorPerson);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.emailPerson);
+            this.panel1.Controls.Add(this.lastNamePerson);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label31);
+            this.panel1.Controls.Add(this.cityPerson);
+            this.panel1.Controls.Add(this.genderPerson);
+            this.panel1.Controls.Add(this.dobPerson);
+            this.panel1.Controls.Add(this.label32);
+            this.panel1.Controls.Add(this.label33);
+            this.panel1.Controls.Add(this.lastNameErrorPerson);
+            this.panel1.Controls.Add(this.idPerson);
+            this.panel1.Controls.Add(this.countryPerson);
+            this.panel1.Controls.Add(this.label35);
+            this.panel1.Controls.Add(this.label36);
+            this.panel1.Controls.Add(this.firstNameErrorPerson);
+            this.panel1.Controls.Add(this.registerUser);
             this.panel1.Controls.Add(this.guarantorID);
             this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.idError);
-            this.panel1.Controls.Add(this.emailError);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.email);
-            this.panel1.Controls.Add(this.lastName);
-            this.panel1.Controls.Add(this.labell);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.city);
-            this.panel1.Controls.Add(this.gender);
             this.panel1.Controls.Add(this.guarantorIDError);
             this.panel1.Controls.Add(this.guarantorRelation);
-            this.panel1.Controls.Add(this.dob);
-            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.submit);
-            this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.lastNameError);
-            this.panel1.Controls.Add(this.ID);
-            this.panel1.Controls.Add(this.country);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.firstNameError);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Location = new System.Drawing.Point(182, 4);
+            this.panel1.Location = new System.Drawing.Point(179, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(403, 524);
+            this.panel1.Size = new System.Drawing.Size(485, 524);
             this.panel1.TabIndex = 15;
+            // 
+            // phonePerson
+            // 
+            this.phonePerson.Location = new System.Drawing.Point(134, 354);
+            this.phonePerson.Name = "phonePerson";
+            this.phonePerson.Size = new System.Drawing.Size(168, 20);
+            this.phonePerson.TabIndex = 44;
+            // 
+            // firstNamePerson
+            // 
+            this.firstNamePerson.Location = new System.Drawing.Point(134, 62);
+            this.firstNamePerson.Name = "firstNamePerson";
+            this.firstNamePerson.Size = new System.Drawing.Size(168, 20);
+            this.firstNamePerson.TabIndex = 39;
+            // 
+            // phoneErrorPerson
+            // 
+            this.phoneErrorPerson.AutoSize = true;
+            this.phoneErrorPerson.ForeColor = System.Drawing.Color.Red;
+            this.phoneErrorPerson.Location = new System.Drawing.Point(134, 378);
+            this.phoneErrorPerson.Name = "phoneErrorPerson";
+            this.phoneErrorPerson.Size = new System.Drawing.Size(0, 13);
+            this.phoneErrorPerson.TabIndex = 53;
+            // 
+            // dobErrorPerson
+            // 
+            this.dobErrorPerson.AutoSize = true;
+            this.dobErrorPerson.BackColor = System.Drawing.Color.Transparent;
+            this.dobErrorPerson.ForeColor = System.Drawing.Color.Red;
+            this.dobErrorPerson.Location = new System.Drawing.Point(134, 257);
+            this.dobErrorPerson.Name = "dobErrorPerson";
+            this.dobErrorPerson.Size = new System.Drawing.Size(0, 13);
+            this.dobErrorPerson.TabIndex = 62;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(101, 199);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(21, 13);
+            this.label3.TabIndex = 47;
+            this.label3.Text = "ID:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(62, 65);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 13);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "First Name:";
+            // 
+            // idErrorPerson
+            // 
+            this.idErrorPerson.AutoSize = true;
+            this.idErrorPerson.ForeColor = System.Drawing.Color.Red;
+            this.idErrorPerson.Location = new System.Drawing.Point(134, 217);
+            this.idErrorPerson.Name = "idErrorPerson";
+            this.idErrorPerson.Size = new System.Drawing.Size(0, 13);
+            this.idErrorPerson.TabIndex = 61;
+            // 
+            // emailErrorPerson
+            // 
+            this.emailErrorPerson.AutoSize = true;
+            this.emailErrorPerson.ForeColor = System.Drawing.Color.Red;
+            this.emailErrorPerson.Location = new System.Drawing.Point(136, 420);
+            this.emailErrorPerson.Name = "emailErrorPerson";
+            this.emailErrorPerson.Size = new System.Drawing.Size(0, 13);
+            this.emailErrorPerson.TabIndex = 50;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(95, 321);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(27, 13);
+            this.label7.TabIndex = 55;
+            this.label7.Text = "City:";
+            // 
+            // emailPerson
+            // 
+            this.emailPerson.Location = new System.Drawing.Point(134, 394);
+            this.emailPerson.Name = "emailPerson";
+            this.emailPerson.Size = new System.Drawing.Size(168, 20);
+            this.emailPerson.TabIndex = 46;
+            // 
+            // lastNamePerson
+            // 
+            this.lastNamePerson.Location = new System.Drawing.Point(134, 105);
+            this.lastNamePerson.Name = "lastNamePerson";
+            this.lastNamePerson.Size = new System.Drawing.Size(168, 20);
+            this.lastNamePerson.TabIndex = 40;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(53, 240);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(69, 13);
+            this.label8.TabIndex = 48;
+            this.label8.Text = "Date of Birth:";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(81, 357);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(41, 13);
+            this.label31.TabIndex = 51;
+            this.label31.Text = "Phone:";
+            // 
+            // cityPerson
+            // 
+            this.cityPerson.FormattingEnabled = true;
+            this.cityPerson.Location = new System.Drawing.Point(134, 313);
+            this.cityPerson.Name = "cityPerson";
+            this.cityPerson.Size = new System.Drawing.Size(168, 21);
+            this.cityPerson.TabIndex = 56;
+            // 
+            // genderPerson
+            // 
+            this.genderPerson.FormattingEnabled = true;
+            this.genderPerson.Location = new System.Drawing.Point(134, 148);
+            this.genderPerson.Name = "genderPerson";
+            this.genderPerson.Size = new System.Drawing.Size(168, 21);
+            this.genderPerson.TabIndex = 60;
+            // 
+            // dobPerson
+            // 
+            this.dobPerson.Location = new System.Drawing.Point(134, 233);
+            this.dobPerson.Name = "dobPerson";
+            this.dobPerson.Size = new System.Drawing.Size(168, 20);
+            this.dobPerson.TabIndex = 49;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(70, 111);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(58, 13);
+            this.label32.TabIndex = 41;
+            this.label32.Text = "LastName:";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(87, 401);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(35, 13);
+            this.label33.TabIndex = 52;
+            this.label33.Text = "Email:";
+            // 
+            // lastNameErrorPerson
+            // 
+            this.lastNameErrorPerson.AutoSize = true;
+            this.lastNameErrorPerson.ForeColor = System.Drawing.Color.Red;
+            this.lastNameErrorPerson.Location = new System.Drawing.Point(133, 132);
+            this.lastNameErrorPerson.Name = "lastNameErrorPerson";
+            this.lastNameErrorPerson.Size = new System.Drawing.Size(0, 13);
+            this.lastNameErrorPerson.TabIndex = 58;
+            // 
+            // idPerson
+            // 
+            this.idPerson.Location = new System.Drawing.Point(134, 192);
+            this.idPerson.Name = "idPerson";
+            this.idPerson.Size = new System.Drawing.Size(168, 20);
+            this.idPerson.TabIndex = 45;
+            // 
+            // countryPerson
+            // 
+            this.countryPerson.FormattingEnabled = true;
+            this.countryPerson.Location = new System.Drawing.Point(134, 274);
+            this.countryPerson.Name = "countryPerson";
+            this.countryPerson.Size = new System.Drawing.Size(168, 21);
+            this.countryPerson.TabIndex = 57;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(76, 282);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(46, 13);
+            this.label35.TabIndex = 54;
+            this.label35.Text = "Country:";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(77, 156);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(45, 13);
+            this.label36.TabIndex = 43;
+            this.label36.Text = "Gender:";
+            // 
+            // firstNameErrorPerson
+            // 
+            this.firstNameErrorPerson.AutoSize = true;
+            this.firstNameErrorPerson.ForeColor = System.Drawing.Color.Red;
+            this.firstNameErrorPerson.Location = new System.Drawing.Point(133, 85);
+            this.firstNameErrorPerson.Name = "firstNameErrorPerson";
+            this.firstNameErrorPerson.Size = new System.Drawing.Size(0, 13);
+            this.firstNameErrorPerson.TabIndex = 59;
+            // 
+            // registerUser
+            // 
+            this.registerUser.Location = new System.Drawing.Point(341, 3);
+            this.registerUser.Name = "registerUser";
+            this.registerUser.Size = new System.Drawing.Size(129, 23);
+            this.registerUser.TabIndex = 15;
+            this.registerUser.Text = "Register a user";
+            this.registerUser.UseVisualStyleBackColor = true;
+            this.registerUser.Click += new System.EventHandler(this.registerUser_Click);
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.registerPers);
+            this.panel2.Controls.Add(this.label30);
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.textBox3);
             this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.passwordConfirmError);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.label17);
@@ -436,61 +454,47 @@ namespace BankForm
             this.panel2.Controls.Add(this.label27);
             this.panel2.Controls.Add(this.label28);
             this.panel2.Controls.Add(this.label29);
-            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label16);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Location = new System.Drawing.Point(185, 4);
+            this.panel2.Location = new System.Drawing.Point(182, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(403, 553);
+            this.panel2.Size = new System.Drawing.Size(485, 520);
             this.panel2.TabIndex = 16;
+            // 
+            // registerPers
+            // 
+            this.registerPers.Location = new System.Drawing.Point(338, 6);
+            this.registerPers.Name = "registerPers";
+            this.registerPers.Size = new System.Drawing.Size(129, 23);
+            this.registerPers.TabIndex = 40;
+            this.registerPers.Text = "Register a person";
+            this.registerPers.UseVisualStyleBackColor = true;
+            this.registerPers.Click += new System.EventHandler(this.registerPers_Click);
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(138, 5);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(136, 24);
+            this.label30.TabIndex = 39;
+            this.label30.Text = "Register a user";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(162, 480);
+            this.button1.Location = new System.Drawing.Point(137, 481);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
             this.button1.Text = "Register";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(137, 407);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 20);
-            this.textBox1.TabIndex = 0;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(69, 410);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(56, 13);
-            this.label15.TabIndex = 1;
-            this.label15.Text = "Password:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(137, 441);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(162, 20);
-            this.textBox2.TabIndex = 0;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(32, 444);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(93, 13);
-            this.label16.TabIndex = 1;
-            this.label16.Text = "Confirm password:";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(137, 331);
+            this.textBox3.Location = new System.Drawing.Point(137, 332);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(168, 20);
             this.textBox3.TabIndex = 20;
@@ -502,11 +506,20 @@ namespace BankForm
             this.textBox4.Size = new System.Drawing.Size(168, 20);
             this.textBox4.TabIndex = 15;
             // 
+            // passwordConfirmError
+            // 
+            this.passwordConfirmError.AutoSize = true;
+            this.passwordConfirmError.ForeColor = System.Drawing.Color.Red;
+            this.passwordConfirmError.Location = new System.Drawing.Point(137, 481);
+            this.passwordConfirmError.Name = "passwordConfirmError";
+            this.passwordConfirmError.Size = new System.Drawing.Size(0, 13);
+            this.passwordConfirmError.TabIndex = 29;
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.ForeColor = System.Drawing.Color.Red;
-            this.label12.Location = new System.Drawing.Point(137, 354);
+            this.label12.Location = new System.Drawing.Point(137, 356);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(0, 13);
             this.label12.TabIndex = 29;
@@ -552,7 +565,7 @@ namespace BankForm
             // 
             this.label20.AutoSize = true;
             this.label20.ForeColor = System.Drawing.Color.Red;
-            this.label20.Location = new System.Drawing.Point(139, 393);
+            this.label20.Location = new System.Drawing.Point(139, 398);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(0, 13);
             this.label20.TabIndex = 26;
@@ -568,7 +581,7 @@ namespace BankForm
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(137, 370);
+            this.textBox5.Location = new System.Drawing.Point(137, 372);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(168, 20);
             this.textBox5.TabIndex = 22;
@@ -592,7 +605,7 @@ namespace BankForm
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(84, 334);
+            this.label23.Location = new System.Drawing.Point(84, 335);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(41, 13);
             this.label23.TabIndex = 27;
@@ -633,7 +646,7 @@ namespace BankForm
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(90, 377);
+            this.label25.Location = new System.Drawing.Point(90, 379);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(35, 13);
             this.label25.TabIndex = 28;
@@ -690,13 +703,45 @@ namespace BankForm
             this.label29.Size = new System.Drawing.Size(0, 13);
             this.label29.TabIndex = 35;
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(32, 455);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(93, 13);
+            this.label16.TabIndex = 1;
+            this.label16.Text = "Confirm password:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(69, 413);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(56, 13);
+            this.label15.TabIndex = 1;
+            this.label15.Text = "Password:";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(137, 452);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(168, 20);
+            this.textBox2.TabIndex = 0;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(137, 410);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(168, 20);
+            this.textBox1.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(697, 540);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(836, 578);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
@@ -708,38 +753,13 @@ namespace BankForm
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox firstName;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox lastName;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox ID;
-        private System.Windows.Forms.Label labell;
-        private System.Windows.Forms.DateTimePicker dob;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox country;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox city;
         private System.Windows.Forms.Button submit;
-        private System.Windows.Forms.Label firstNameError;
-        private System.Windows.Forms.Label lastNameError;
-        private System.Windows.Forms.ComboBox gender;
-        private System.Windows.Forms.Label idError;
-        private System.Windows.Forms.Label dobError;
-        private System.Windows.Forms.TextBox phone;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox email;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox guarantorID;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox guarantorRelation;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label guarantorIDError;
-        private System.Windows.Forms.Label phoneError;
-        private System.Windows.Forms.Label emailError;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
@@ -772,6 +792,34 @@ namespace BankForm
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label passwordConfirmError;
+        private System.Windows.Forms.Button registerPers;
+        private System.Windows.Forms.Button registerUser;
+        private System.Windows.Forms.TextBox phonePerson;
+        private System.Windows.Forms.TextBox firstNamePerson;
+        private System.Windows.Forms.Label phoneErrorPerson;
+        private System.Windows.Forms.Label dobErrorPerson;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label idErrorPerson;
+        private System.Windows.Forms.Label emailErrorPerson;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox emailPerson;
+        private System.Windows.Forms.TextBox lastNamePerson;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.ComboBox cityPerson;
+        private System.Windows.Forms.ComboBox genderPerson;
+        private System.Windows.Forms.DateTimePicker dobPerson;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label lastNameErrorPerson;
+        private System.Windows.Forms.TextBox idPerson;
+        private System.Windows.Forms.ComboBox countryPerson;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label firstNameErrorPerson;
     }
 }
 
