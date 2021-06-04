@@ -184,6 +184,7 @@ namespace BankForm
             // 
             // personRegisterPanel
             // 
+            this.personRegisterPanel.Controls.Add(this.loginPanel);
             this.personRegisterPanel.Controls.Add(this.userRegisterPanel);
             this.personRegisterPanel.Controls.Add(this.registerPerson);
             this.personRegisterPanel.Controls.Add(this.phonePerson);
@@ -452,7 +453,7 @@ namespace BankForm
             this.loginPanel.Controls.Add(this.textBox9);
             this.loginPanel.Controls.Add(this.textBox8);
             this.loginPanel.Controls.Add(this.label1);
-            this.loginPanel.Location = new System.Drawing.Point(0, -3);
+            this.loginPanel.Location = new System.Drawing.Point(28, 3);
             this.loginPanel.Name = "loginPanel";
             this.loginPanel.Size = new System.Drawing.Size(482, 598);
             this.loginPanel.TabIndex = 17;
@@ -510,7 +511,6 @@ namespace BankForm
             // 
             // userRegisterPanel
             // 
-            this.userRegisterPanel.Controls.Add(this.loginPanel);
             this.userRegisterPanel.Controls.Add(this.label12);
             this.userRegisterPanel.Controls.Add(this.label6);
             this.userRegisterPanel.Controls.Add(this.role);

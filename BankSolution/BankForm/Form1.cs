@@ -97,28 +97,62 @@ namespace BankForm
 
         private void registerPerson_Click(object sender, EventArgs e)
         {
+            bool valid = true;
             #region calling validations for person registration.
             firstNameErrorPerson.Text = Validations.validName(firstNamePerson.Text);
+            if (firstNameErrorPerson.Text != "") valid = false;
+
             lastNameErrorPerson.Text = Validations.validName(lastNamePerson.Text);
-            idErrorPerson.Text = Validations.validId(idPerson.Text);
+            if (lastNameErrorPerson.Text != "") valid = false;
+
             dobErrorPerson.Text = Validations.validDob(dobPerson.Value, genderPerson.Text);
+            if (dobErrorPerson.Text != "") valid = false;
+
             guarantorIDError.Text = Validations.validId(guarantorID.Text);
+            if (guarantorIDError.Text != "") valid = false;
+
             phoneErrorPerson.Text = Validations.validPhone(phonePerson.Text);
+            if (phoneErrorPerson.Text != "") valid = false;
+
             emailErrorPerson.Text = Validations.validEmail(emailPerson.Text);
+            if (emailErrorPerson.Text != "") valid = false;
+
+            if (valid)
+            {
+
+            }
             #endregion
+
         }
 
         private void registerUser_Click(object sender, EventArgs e)
         {
             //Account.AuthUser A = new Account.AuthUser()
             #region calling validations for user registration.
+            bool valid = true;
             firstNameErrorUser.Text = Validations.validName(firstNameUser.Text);
+            if (firstNameErrorUser.Text != "") valid = false;
+
             lastNameErrorUser.Text = Validations.validName(lastNameUser.Text);
-            idErrorUser.Text = Validations.validId(idUser.Text);
+            if (lastNameErrorUser.Text != "") valid = false;
+
             dobErrorUser.Text = Validations.validDob(dobUser.Value, genderUser.Text);
+            if (dobErrorUser.Text != "") valid = false;
+
             guarantorIDError.Text = Validations.validId(guarantorID.Text);
+            if (guarantorIDError.Text != "") valid = false;
+
             phoneErrorUser.Text = Validations.validPhone(phoneUser.Text);
+            if (phoneErrorUser.Text != "") valid = false;
+
             emailErrorUser.Text = Validations.validEmail(emailUser.Text);
+            if (emailErrorUser.Text != "") valid = false;
+
+            if (valid)
+            {
+
+            }
+
             #endregion
         }
 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<People>
+	<Person>
+		<GUID> </GUID>
+		<Name> 
+			<First> </First>	
+			<Last> </Last>
+		</Name>
+		<Gender> </Gender>
+		<ID> </ID>
+		<DoB> </DoB>
+		<Country> </Country>
+		<City> </City>
+		<Phone> </phone>
+		<Email> </email>
+		<Guarantor>
+			<Relation> </Relation>
+			<ID> </ID>
+		</Guarantor>	
+	</Person>
