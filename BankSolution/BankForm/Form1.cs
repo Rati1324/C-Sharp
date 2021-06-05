@@ -180,6 +180,20 @@ namespace BankForm
                 D.Save("C:/Users/rati/source/repos/C-Sharp/BankSolution/BankForm/bin/Debug/People.xml");
             }
         }
+
+        private void getAll_Click(object sender, EventArgs e)
+        {
+            XElement X = XElement.Load("People.xml");
+            var people = X.Elements();
+            foreach (var p in people)
+            {
+                int n = peopleList.Rows.Add();
+                peopleList.Rows[n].Cells[0].Value = p.Element("GUID").Value;
+                peopleList.Rows[n].Cells[1].Value = p.Element("Name").Element("First").Value;
+                peopleList.Rows[n].Cells[2].Value = p.Element("Name").Element("Last").Value;
+                peopleList.Rows[n].Cells[3].Value = p.Element("ID").Value;
+            }
+        }
     }
 }
 

@@ -105,18 +105,18 @@ namespace BankForm
             this.label9 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.getAll = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.peopleList = new System.Windows.Forms.DataGridView();
+            this.registerUser = new System.Windows.Forms.Button();
+            this.registerPerson = new System.Windows.Forms.Button();
             this.GUIDCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firstNameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastNameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IDCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.registerUser = new System.Windows.Forms.Button();
-            this.registerPerson = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peopleList)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -837,7 +837,7 @@ namespace BankForm
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.getAll);
-            this.tabPage3.Controls.Add(this.dataGridView1);
+            this.tabPage3.Controls.Add(this.peopleList);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -854,39 +854,20 @@ namespace BankForm
             this.getAll.TabIndex = 1;
             this.getAll.Text = "Get all";
             this.getAll.UseVisualStyleBackColor = true;
+            this.getAll.Click += new System.EventHandler(this.getAll_Click);
             // 
-            // dataGridView1
+            // peopleList
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.peopleList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.peopleList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.GUIDCol,
             this.firstNameCol,
             this.lastNameCol,
             this.IDCol});
-            this.dataGridView1.Location = new System.Drawing.Point(3, 107);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(622, 311);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // GUIDCol
-            // 
-            this.GUIDCol.HeaderText = "Column1";
-            this.GUIDCol.Name = "GUIDCol";
-            // 
-            // firstNameCol
-            // 
-            this.firstNameCol.HeaderText = "First Name";
-            this.firstNameCol.Name = "firstNameCol";
-            // 
-            // lastNameCol
-            // 
-            this.lastNameCol.HeaderText = "Last Name";
-            this.lastNameCol.Name = "lastNameCol";
-            // 
-            // IDCol
-            // 
-            this.IDCol.HeaderText = "ID";
-            this.IDCol.Name = "IDCol";
+            this.peopleList.Location = new System.Drawing.Point(3, 107);
+            this.peopleList.Name = "peopleList";
+            this.peopleList.Size = new System.Drawing.Size(622, 311);
+            this.peopleList.TabIndex = 0;
             // 
             // registerUser
             // 
@@ -908,6 +889,26 @@ namespace BankForm
             this.registerPerson.UseVisualStyleBackColor = true;
             this.registerPerson.Click += new System.EventHandler(this.registerPerson_Click);
             // 
+            // GUIDCol
+            // 
+            this.GUIDCol.HeaderText = "GUID";
+            this.GUIDCol.Name = "GUIDCol";
+            // 
+            // firstNameCol
+            // 
+            this.firstNameCol.HeaderText = "First Name";
+            this.firstNameCol.Name = "firstNameCol";
+            // 
+            // lastNameCol
+            // 
+            this.lastNameCol.HeaderText = "Last Name";
+            this.lastNameCol.Name = "lastNameCol";
+            // 
+            // IDCol
+            // 
+            this.IDCol.HeaderText = "ID";
+            this.IDCol.Name = "IDCol";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -922,7 +923,7 @@ namespace BankForm
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peopleList)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1002,13 +1003,13 @@ namespace BankForm
         private Label label10;
         private Label label9;
         private TabPage tabPage3;
-        private DataGridView dataGridView1;
+        private DataGridView peopleList;
         private Button getAll;
+        private Button registerUser;
+        private Button registerPerson;
         private DataGridViewTextBoxColumn GUIDCol;
         private DataGridViewTextBoxColumn firstNameCol;
         private DataGridViewTextBoxColumn lastNameCol;
         private DataGridViewTextBoxColumn IDCol;
-        private Button registerUser;
-        private Button registerPerson;
     }
 }
