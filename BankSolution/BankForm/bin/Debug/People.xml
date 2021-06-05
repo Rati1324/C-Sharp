@@ -1,31 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <People>
   <Person>
-    <GUID>b5fd8540-9a5e-48c0-9d02-a6c7cad84eaa</GUID>
+    <GUID>d59fe7f5-2db0-4925-9599-8a822f8a4416</GUID>
     <Name>
       <First>asd</First>
-      <Last>sd11</Last>
+      <Last>asd</Last>
     </Name>
     <Gender>Male</Gender>
-    <DateOfBirth>01990:01:30</DateOfBirth>
+    <DateOfBirth>01990:03:08</DateOfBirth>
     <ID>12121212121</ID>
     <Country>Georgia</Country>
     <City>Tbilisi</City>
-    <Phone>121212121</Phone>
-    <Email>sad@sad.com</Email>
-  </Person>
-  <Person>
-    <GUID>e7347650-8366-485b-a455-df2f7e8fdbfd</GUID>
-    <Name>
-      <First>asd</First>
-      <Last>dasdas</Last>
-    </Name>
-    <Gender>Male</Gender>
-    <DateOfBirth>01990:01:30</DateOfBirth>
-    <ID>12121212121</ID>
-    <Country>Georgia</Country>
-    <City>Tbilisi</City>
-    <Phone>121212121</Phone>
-    <Email>sad@sad.com</Email>
+    <Phone>232323232</Phone>
+    <Email>das@asd.com</Email>
+    <Guarantor_Relation>Parent</Guarantor_Relation>
+    <Guarantor_Id>12121212121</Guarantor_Id>
   </Person>
 </People>

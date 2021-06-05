@@ -38,6 +38,7 @@ namespace BankForm
             this.role = new System.Windows.Forms.ComboBox();
             this.branch = new System.Windows.Forms.ComboBox();
             this.label30 = new System.Windows.Forms.Label();
+            this.registerUser = new System.Windows.Forms.Button();
             this.phoneUser = new System.Windows.Forms.TextBox();
             this.firstNameUser = new System.Windows.Forms.TextBox();
             this.passwordConfirmError = new System.Windows.Forms.Label();
@@ -72,6 +73,7 @@ namespace BankForm
             this.label38 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.registerPerson = new System.Windows.Forms.Button();
             this.phonePerson = new System.Windows.Forms.TextBox();
             this.firstNamePerson = new System.Windows.Forms.TextBox();
             this.phoneErrorPerson = new System.Windows.Forms.Label();
@@ -106,8 +108,6 @@ namespace BankForm
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.getAll = new System.Windows.Forms.Button();
             this.peopleList = new System.Windows.Forms.DataGridView();
-            this.registerUser = new System.Windows.Forms.Button();
-            this.registerPerson = new System.Windows.Forms.Button();
             this.GUIDCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firstNameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastNameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -119,6 +119,10 @@ namespace BankForm
             this.dobCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.guarantorIDCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.save = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.test = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -134,7 +138,7 @@ namespace BankForm
             this.tabControl1.Location = new System.Drawing.Point(-1, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1143, 702);
+            this.tabControl1.Size = new System.Drawing.Size(1452, 702);
             this.tabControl1.TabIndex = 19;
             // 
             // tabPage1
@@ -181,7 +185,7 @@ namespace BankForm
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1015, 676);
+            this.tabPage1.Size = new System.Drawing.Size(1444, 676);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -239,6 +243,16 @@ namespace BankForm
             this.label30.Size = new System.Drawing.Size(145, 24);
             this.label30.TabIndex = 103;
             this.label30.Text = "User registration";
+            // 
+            // registerUser
+            // 
+            this.registerUser.Location = new System.Drawing.Point(341, 596);
+            this.registerUser.Name = "registerUser";
+            this.registerUser.Size = new System.Drawing.Size(75, 23);
+            this.registerUser.TabIndex = 77;
+            this.registerUser.Text = "Register";
+            this.registerUser.UseVisualStyleBackColor = true;
+            this.registerUser.Click += new System.EventHandler(this.registerUser_Click);
             // 
             // phoneUser
             // 
@@ -556,10 +570,20 @@ namespace BankForm
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1015, 676);
+            this.tabPage2.Size = new System.Drawing.Size(1444, 676);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // registerPerson
+            // 
+            this.registerPerson.Location = new System.Drawing.Point(327, 553);
+            this.registerPerson.Name = "registerPerson";
+            this.registerPerson.Size = new System.Drawing.Size(75, 23);
+            this.registerPerson.TabIndex = 95;
+            this.registerPerson.Text = "Register";
+            this.registerPerson.UseVisualStyleBackColor = true;
+            this.registerPerson.Click += new System.EventHandler(this.registerPerson_Click);
             // 
             // phonePerson
             // 
@@ -843,12 +867,13 @@ namespace BankForm
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.test);
             this.tabPage3.Controls.Add(this.getAll);
             this.tabPage3.Controls.Add(this.peopleList);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1135, 676);
+            this.tabPage3.Size = new System.Drawing.Size(1444, 676);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -877,31 +902,15 @@ namespace BankForm
             this.gender,
             this.dobCol,
             this.emailCol,
-            this.phoneCol});
+            this.phoneCol,
+            this.guarantorIDCol,
+            this.save,
+            this.delete});
             this.peopleList.Location = new System.Drawing.Point(0, 73);
             this.peopleList.Name = "peopleList";
-            this.peopleList.Size = new System.Drawing.Size(1126, 311);
+            this.peopleList.Size = new System.Drawing.Size(1441, 311);
             this.peopleList.TabIndex = 0;
-            // 
-            // registerUser
-            // 
-            this.registerUser.Location = new System.Drawing.Point(341, 596);
-            this.registerUser.Name = "registerUser";
-            this.registerUser.Size = new System.Drawing.Size(75, 23);
-            this.registerUser.TabIndex = 77;
-            this.registerUser.Text = "Register";
-            this.registerUser.UseVisualStyleBackColor = true;
-            this.registerUser.Click += new System.EventHandler(this.registerUser_Click);
-            // 
-            // registerPerson
-            // 
-            this.registerPerson.Location = new System.Drawing.Point(327, 553);
-            this.registerPerson.Name = "registerPerson";
-            this.registerPerson.Size = new System.Drawing.Size(75, 23);
-            this.registerPerson.TabIndex = 95;
-            this.registerPerson.Text = "Register";
-            this.registerPerson.UseVisualStyleBackColor = true;
-            this.registerPerson.Click += new System.EventHandler(this.registerPerson_Click);
+            this.peopleList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.peopleList_CellClick);
             // 
             // GUIDCol
             // 
@@ -958,11 +967,36 @@ namespace BankForm
             this.phoneCol.HeaderText = "phone";
             this.phoneCol.Name = "phoneCol";
             // 
+            // guarantorIDCol
+            // 
+            this.guarantorIDCol.HeaderText = "Guarantor ID";
+            this.guarantorIDCol.Name = "guarantorIDCol";
+            // 
+            // save
+            // 
+            this.save.HeaderText = "Save";
+            this.save.Name = "save";
+            this.save.ToolTipText = "dsadsa";
+            // 
+            // delete
+            // 
+            this.delete.HeaderText = "Delete";
+            this.delete.Name = "delete";
+            // 
+            // test
+            // 
+            this.test.AutoSize = true;
+            this.test.Location = new System.Drawing.Point(186, 18);
+            this.test.Name = "test";
+            this.test.Size = new System.Drawing.Size(35, 13);
+            this.test.TabIndex = 2;
+            this.test.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1201, 711);
+            this.ClientSize = new System.Drawing.Size(1450, 711);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -972,6 +1006,7 @@ namespace BankForm
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.peopleList)).EndInit();
             this.ResumeLayout(false);
 
@@ -1067,5 +1102,9 @@ namespace BankForm
         private DataGridViewTextBoxColumn dobCol;
         private DataGridViewTextBoxColumn emailCol;
         private DataGridViewTextBoxColumn phoneCol;
+        private DataGridViewTextBoxColumn guarantorIDCol;
+        private DataGridViewButtonColumn save;
+        private DataGridViewButtonColumn delete;
+        private Label test;
     }
 }

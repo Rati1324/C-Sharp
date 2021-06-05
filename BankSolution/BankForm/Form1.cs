@@ -10,6 +10,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using System.Threading;
 
 namespace BankForm
 {
@@ -175,7 +176,9 @@ namespace BankForm
                             new XElement("Country", countryPerson.SelectedItem),
                             new XElement("City", cityPerson.SelectedItem),
                             new XElement("Phone", phonePerson.Text),
-                            new XElement("Email", emailPerson.Text)
+                            new XElement("Email", emailPerson.Text),
+                            new XElement("Guarantor_Relation", guarantorRelation.SelectedItem),
+                            new XElement("Guarantor_Id", guarantorID.Text)
                             ));
                 D.Save("C:/Users/rati/source/repos/C-Sharp/BankSolution/BankForm/bin/Debug/People.xml");
             }
@@ -183,6 +186,7 @@ namespace BankForm
 
         private void getAll_Click(object sender, EventArgs e)
         {
+            
             var people = Account.PhysicalPerson.getAllPeople();
             foreach (var p in people)
             {
@@ -191,7 +195,21 @@ namespace BankForm
                 peopleList.Rows[n].Cells[1].Value = p.Element("Name").Element("First").Value;
                 peopleList.Rows[n].Cells[2].Value = p.Element("Name").Element("Last").Value;
                 peopleList.Rows[n].Cells[3].Value = p.Element("ID").Value;
+                peopleList.Rows[n].Cells[4].Value = p.Element("City").Value;
+                peopleList.Rows[n].Cells[5].Value = p.Element("Country").Value;
+                peopleList.Rows[n].Cells[6].Value = p.Element("Guarantor_Relation").Value;
+                peopleList.Rows[n].Cells[7].Value = p.Element("Guarantor_Id").Value;
             }
+        }
+
+        private void peopleList_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+            if (e.ColumnIndex == peopleList.Columns["save"].Index)
+            {
+                test.Text = peopleList.Rows[e.RowIndex].Cells[4].Value.ToString();
+            }
+            
         }
     }
 }
