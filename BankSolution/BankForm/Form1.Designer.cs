@@ -38,7 +38,6 @@ namespace BankForm
             this.role = new System.Windows.Forms.ComboBox();
             this.branch = new System.Windows.Forms.ComboBox();
             this.label30 = new System.Windows.Forms.Label();
-            this.registerUser = new System.Windows.Forms.Button();
             this.phoneUser = new System.Windows.Forms.TextBox();
             this.firstNameUser = new System.Windows.Forms.TextBox();
             this.passwordConfirmError = new System.Windows.Forms.Label();
@@ -73,7 +72,6 @@ namespace BankForm
             this.label38 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.registerPerson = new System.Windows.Forms.Button();
             this.phonePerson = new System.Windows.Forms.TextBox();
             this.firstNamePerson = new System.Windows.Forms.TextBox();
             this.phoneErrorPerson = new System.Windows.Forms.Label();
@@ -105,21 +103,31 @@ namespace BankForm
             this.guarantorRelation = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.userLoginTab = new System.Windows.Forms.Button();
-            this.userRegisterTab = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.getAll = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.GUIDCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstNameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastNameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IDCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.registerUser = new System.Windows.Forms.Button();
+            this.registerPerson = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(245, 12);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Location = new System.Drawing.Point(178, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(566, 661);
+            this.tabControl1.Size = new System.Drawing.Size(633, 661);
             this.tabControl1.TabIndex = 19;
             // 
             // tabPage1
@@ -166,7 +174,7 @@ namespace BankForm
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(558, 635);
+            this.tabPage1.Size = new System.Drawing.Size(625, 635);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -224,15 +232,6 @@ namespace BankForm
             this.label30.Size = new System.Drawing.Size(145, 24);
             this.label30.TabIndex = 103;
             this.label30.Text = "User registration";
-            // 
-            // registerUser
-            // 
-            this.registerUser.Location = new System.Drawing.Point(341, 596);
-            this.registerUser.Name = "registerUser";
-            this.registerUser.Size = new System.Drawing.Size(75, 23);
-            this.registerUser.TabIndex = 77;
-            this.registerUser.Text = "Register";
-            this.registerUser.UseVisualStyleBackColor = true;
             // 
             // phoneUser
             // 
@@ -550,19 +549,10 @@ namespace BankForm
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(558, 635);
+            this.tabPage2.Size = new System.Drawing.Size(625, 635);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // registerPerson
-            // 
-            this.registerPerson.Location = new System.Drawing.Point(331, 557);
-            this.registerPerson.Name = "registerPerson";
-            this.registerPerson.Size = new System.Drawing.Size(75, 23);
-            this.registerPerson.TabIndex = 70;
-            this.registerPerson.Text = "Register";
-            this.registerPerson.UseVisualStyleBackColor = true;
             // 
             // phonePerson
             // 
@@ -844,23 +834,79 @@ namespace BankForm
             this.label9.TabIndex = 65;
             this.label9.Text = "Guarantor:";
             // 
-            // userLoginTab
+            // tabPage3
             // 
-            this.userLoginTab.Location = new System.Drawing.Point(22, 12);
-            this.userLoginTab.Name = "userLoginTab";
-            this.userLoginTab.Size = new System.Drawing.Size(75, 23);
-            this.userLoginTab.TabIndex = 18;
-            this.userLoginTab.Text = "Log in";
-            this.userLoginTab.UseVisualStyleBackColor = true;
+            this.tabPage3.Controls.Add(this.getAll);
+            this.tabPage3.Controls.Add(this.dataGridView1);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(625, 635);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // userRegisterTab
+            // getAll
             // 
-            this.userRegisterTab.Location = new System.Drawing.Point(22, 12);
-            this.userRegisterTab.Name = "userRegisterTab";
-            this.userRegisterTab.Size = new System.Drawing.Size(75, 23);
-            this.userRegisterTab.TabIndex = 17;
-            this.userRegisterTab.Text = "Register";
-            this.userRegisterTab.UseVisualStyleBackColor = true;
+            this.getAll.Location = new System.Drawing.Point(16, 8);
+            this.getAll.Name = "getAll";
+            this.getAll.Size = new System.Drawing.Size(75, 23);
+            this.getAll.TabIndex = 1;
+            this.getAll.Text = "Get all";
+            this.getAll.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.GUIDCol,
+            this.firstNameCol,
+            this.lastNameCol,
+            this.IDCol});
+            this.dataGridView1.Location = new System.Drawing.Point(3, 107);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(622, 311);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // GUIDCol
+            // 
+            this.GUIDCol.HeaderText = "Column1";
+            this.GUIDCol.Name = "GUIDCol";
+            // 
+            // firstNameCol
+            // 
+            this.firstNameCol.HeaderText = "First Name";
+            this.firstNameCol.Name = "firstNameCol";
+            // 
+            // lastNameCol
+            // 
+            this.lastNameCol.HeaderText = "Last Name";
+            this.lastNameCol.Name = "lastNameCol";
+            // 
+            // IDCol
+            // 
+            this.IDCol.HeaderText = "ID";
+            this.IDCol.Name = "IDCol";
+            // 
+            // registerUser
+            // 
+            this.registerUser.Location = new System.Drawing.Point(341, 596);
+            this.registerUser.Name = "registerUser";
+            this.registerUser.Size = new System.Drawing.Size(75, 23);
+            this.registerUser.TabIndex = 77;
+            this.registerUser.Text = "Register";
+            this.registerUser.UseVisualStyleBackColor = true;
+            this.registerUser.Click += new System.EventHandler(this.registerUser_Click);
+            // 
+            // registerPerson
+            // 
+            this.registerPerson.Location = new System.Drawing.Point(327, 553);
+            this.registerPerson.Name = "registerPerson";
+            this.registerPerson.Size = new System.Drawing.Size(75, 23);
+            this.registerPerson.TabIndex = 95;
+            this.registerPerson.Text = "Register";
+            this.registerPerson.UseVisualStyleBackColor = true;
+            this.registerPerson.Click += new System.EventHandler(this.registerPerson_Click);
             // 
             // Form1
             // 
@@ -868,8 +914,6 @@ namespace BankForm
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1020, 711);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.userRegisterTab);
-            this.Controls.Add(this.userLoginTab);
             this.Name = "Form1";
             this.Text = "Form1";
             this.tabControl1.ResumeLayout(false);
@@ -877,6 +921,8 @@ namespace BankForm
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -895,7 +941,6 @@ namespace BankForm
         private ComboBox role;
         private ComboBox branch;
         private Label label30;
-        private Button registerUser;
         private TextBox phoneUser;
         private TextBox firstNameUser;
         private Label passwordConfirmError;
@@ -925,7 +970,6 @@ namespace BankForm
         private Label label15;
         private TextBox passwordConfirm;
         private TextBox passwordUser;
-        private Button registerPerson;
         private TextBox phonePerson;
         private TextBox firstNamePerson;
         private Label phoneErrorPerson;
@@ -957,7 +1001,14 @@ namespace BankForm
         private ComboBox guarantorRelation;
         private Label label10;
         private Label label9;
-        private Button userLoginTab;
-        private Button userRegisterTab;
+        private TabPage tabPage3;
+        private DataGridView dataGridView1;
+        private Button getAll;
+        private DataGridViewTextBoxColumn GUIDCol;
+        private DataGridViewTextBoxColumn firstNameCol;
+        private DataGridViewTextBoxColumn lastNameCol;
+        private DataGridViewTextBoxColumn IDCol;
+        private Button registerUser;
+        private Button registerPerson;
     }
 }

@@ -1,22 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Users>
+<People>
   <Person>
-    <GUID>800dd85a-f3f6-4314-b4cd-d19c3603b077</GUID>
-    <Name>
-      <First>sd</First>
-      <Last>sdas</Last>
-    </Name>
-    <Gender>Male</Gender>
-    <DateOfBirth>02021:06:04</DateOfBirth>
-    <ID>adsdas</ID>
-    <Country>Georgia</Country>
-    <City>Tbilisi</City>
-    <Phone>adsads</Phone>
-    <Email></Email>
-    <Password>ads</Password>
-  </Person>
-  <Person>
-    <GUID>d0074232-0a30-4c32-897b-d12b75ce355a</GUID>
+    <GUID>64816905-5632-45a9-a9a2-abda6084f0af</GUID>
     <Name>
       <First></First>
       <Last></Last>
@@ -28,21 +13,5 @@
     <City>Tbilisi</City>
     <Phone></Phone>
     <Email></Email>
-    <Password></Password>
   </Person>
-  <Person>
-    <GUID>31efc61d-5731-4119-b583-45b0038f63e4</GUID>
-    <Name>
-      <First>weewwfewfe</First>
-      <Last></Last>
-    </Name>
-    <Gender>Male</Gender>
-    <DateOfBirth>02021:06:05</DateOfBirth>
-    <ID></ID>
-    <Country>Georgia</Country>
-    <City>Tbilisi</City>
-    <Phone></Phone>
-    <Email></Email>
-    <Password></Password>
-  </Person>
-</Users>
+</People>

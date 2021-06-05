@@ -1,7 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <People>
   <Person>
-    <First>dd</First>
-    <Last>ssssssss</Last>
+    <GUID>b5fd8540-9a5e-48c0-9d02-a6c7cad84eaa</GUID>
+    <Name>
+      <First>asd</First>
+      <Last>sd11</Last>
+    </Name>
+    <Gender>Male</Gender>
+    <DateOfBirth>01990:01:30</DateOfBirth>
+    <ID>12121212121</ID>
+    <Country>Georgia</Country>
+    <City>Tbilisi</City>
+    <Phone>121212121</Phone>
+    <Email>sad@sad.com</Email>
+  </Person>
+  <Person>
+    <GUID>e7347650-8366-485b-a455-df2f7e8fdbfd</GUID>
+    <Name>
+      <First>asd</First>
+      <Last>dasdas</Last>
+    </Name>
+    <Gender>Male</Gender>
+    <DateOfBirth>01990:01:30</DateOfBirth>
+    <ID>12121212121</ID>
+    <Country>Georgia</Country>
+    <City>Tbilisi</City>
+    <Phone>121212121</Phone>
+    <Email>sad@sad.com</Email>
   </Person>
 </People>

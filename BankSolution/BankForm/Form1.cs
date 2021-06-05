@@ -15,7 +15,7 @@ namespace BankForm
 {
     public partial class Form1 : Form
     {
-       
+
         public Dictionary<string, List<string>> Cities = new Dictionary<string, List<string>>()
         {
             {"Georgia", new List<string>{ "Tbilisi" }},
@@ -51,7 +51,6 @@ namespace BankForm
             role.DropDownStyle = ComboBoxStyle.DropDownList;
             role.SelectedIndex = 0;
             #endregion
-
             #region person
             // person country and gender values are alredy added in degisner.cs for some reason????? 
             //countryPerson.Items.AddRange(new object[] { "Georgia", "Tbilisi" });
@@ -65,13 +64,14 @@ namespace BankForm
             cityPerson.DropDownStyle = ComboBoxStyle.DropDownList;
             cityPerson.SelectedIndex = 0;
 
-            genderPerson.Items.AddRange(new object[] { "Male", "Female" });
+            //genderPerson.Items.AddRange(new object[] { "Male", "Female" });
             genderPerson.DropDownStyle = ComboBoxStyle.DropDownList;
             genderPerson.SelectedIndex = 0;
 
             guarantorRelation.DropDownStyle = ComboBoxStyle.DropDownList;
             guarantorRelation.SelectedIndex = 0;
             #endregion
+
         }
 
         private void countryUser_SelectedIndexChanged(object sender, EventArgs e)
@@ -92,6 +92,51 @@ namespace BankForm
                 cityPerson.Items.Add(elem);
             }
             cityPerson.SelectedIndex = 0;
+        }
+        private void registerUser_Click(object sender, EventArgs e)
+        {
+            //Account.AuthUser A = new Account.AuthUser()
+            #region calling validations for user registration.
+            bool valid = true;
+            firstNameErrorUser.Text = Validations.validName(firstNameUser.Text);
+            if (firstNameErrorUser.Text != "") valid = false;
+
+            lastNameErrorUser.Text = Validations.validName(lastNameUser.Text);
+            if (lastNameErrorUser.Text != "") valid = false;
+
+            dobErrorUser.Text = Validations.validDob(dobUser.Value, genderUser.Text);
+            if (dobErrorUser.Text != "") valid = false;
+
+            phoneErrorUser.Text = Validations.validPhone(phoneUser.Text);
+            if (phoneErrorUser.Text != "") valid = false;
+
+            emailErrorUser.Text = Validations.validEmail(emailUser.Text);
+            if (emailErrorUser.Text != "") valid = false;
+            #endregion
+
+            if (valid)
+            {
+                Account.AuthUser A = new Account.AuthUser(firstNameUser.Text,
+                    lastNameUser.Text, genderUser.SelectedItem.ToString(), idUser.Text, dobUser.Value, countryUser.Text, cityUser.Text,
+                    phoneUser.Text, emailUser.Text, passwordUser.Text, role.Text, branch.Text
+                    );
+                XDocument D = XDocument.Load("Users.xml");
+                D.Element("Users").Add(new XElement("User",
+                            new XElement("GUID", A.GuID),
+                            new XElement("Name",
+                                new XElement("First", firstNameUser.Text),
+                                new XElement("Last", lastNameUser.Text)),
+                            new XElement("Gender", genderUser.SelectedItem),
+                            new XElement("DateOfBirth", dobUser.Value.ToString("yyyyy:MM:dd")),
+                            new XElement("ID", idUser.Text),
+                            new XElement("Country", countryUser.SelectedItem),
+                            new XElement("City", cityUser.SelectedItem),
+                            new XElement("Phone", phoneUser.Text),
+                            new XElement("Email", emailUser.Text),
+                            new XElement("Password", passwordUser.Text)
+                            ));
+                D.Save("C:/Users/rati/source/repos/C-Sharp/BankSolution/BankForm/bin/Debug/Users.xml");
+            }
         }
 
         private void registerPerson_Click(object sender, EventArgs e)
@@ -115,69 +160,26 @@ namespace BankForm
 
             emailErrorPerson.Text = Validations.validEmail(emailPerson.Text);
             if (emailErrorPerson.Text != "") valid = false;
-
+            #endregion
             if (valid)
             {
-
+                XDocument D = XDocument.Load("People.xml");
+                D.Element("People").Add(new XElement("Person",
+                            new XElement("GUID", Guid.NewGuid().ToString()),
+                            new XElement("Name",
+                                new XElement("First", firstNamePerson.Text),
+                                new XElement("Last", lastNamePerson.Text)),
+                            new XElement("Gender", genderPerson.SelectedItem),
+                            new XElement("DateOfBirth", dobPerson.Value.ToString("yyyyy:MM:dd")),
+                            new XElement("ID", idPerson.Text),
+                            new XElement("Country", countryPerson.SelectedItem),
+                            new XElement("City", cityPerson.SelectedItem),
+                            new XElement("Phone", phonePerson.Text),
+                            new XElement("Email", emailPerson.Text)
+                            ));
+                D.Save("C:/Users/rati/source/repos/C-Sharp/BankSolution/BankForm/bin/Debug/People.xml");
             }
-            #endregion
-
         }
-
-        private void registerUser_Click(object sender, EventArgs e)
-        {
-            //Account.AuthUser A = new Account.AuthUser()
-            #region calling validations for user registration.
-            bool valid = true;
-            firstNameErrorUser.Text = Validations.validName(firstNameUser.Text);
-            if (firstNameErrorUser.Text != "") valid = false;
-
-            lastNameErrorUser.Text = Validations.validName(lastNameUser.Text);
-            if (lastNameErrorUser.Text != "") valid = false;
-
-            dobErrorUser.Text = Validations.validDob(dobUser.Value, genderUser.Text);
-            if (dobErrorUser.Text != "") valid = false;
-
-            guarantorIDError.Text = Validations.validId(guarantorID.Text);
-            if (guarantorIDError.Text != "") valid = false;
-
-            phoneErrorUser.Text = Validations.validPhone(phoneUser.Text);
-            if (phoneErrorUser.Text != "") valid = false;
-
-            emailErrorUser.Text = Validations.validEmail(emailUser.Text);
-            if (emailErrorUser.Text != "") valid = false;
-
-            valid = true;
-
-            if (valid)
-            {
-
-                Account.AuthUser A = new Account.AuthUser(firstNameUser.Text,
-                    lastNameUser.Text, genderUser.SelectedItem.ToString(), idUser.Text, dobUser.Value, countryUser.Text, cityUser.Text,
-                    phoneUser.Text, emailUser.Text, passwordUser.Text, role.Text, branch.Text
-                    );
-                XDocument D = XDocument.Load("Users.xml");
-                D.Element("Users").Add(new XElement("Person",
-                    new XElement("GUID", A.GuID),
-                    new XElement("Name",
-                        new XElement("First", firstNameUser.Text),
-                        new XElement("Last", lastNameUser.Text)),
-                    new XElement("Gender", genderUser.SelectedItem),
-                    new XElement("DateOfBirth", dobUser.Value.ToString("yyyyy:MM:dd")),
-                    new XElement("ID", idUser.Text),
-                    new XElement("Country", countryUser.SelectedItem),
-                    new XElement("City", cityUser.SelectedItem),
-                    new XElement("Phone", phoneUser.Text),
-                    new XElement("Email", emailUser.Text),
-                    new XElement("Password", passwordUser.Text)
-                    ));
-                D.Save("C:/Users/rati/source/repos/C-Sharp/BankSolution/BankForm/bin/Debug/Users.xml");
-            }
-
-            #endregion
-        }
-
-        
     }
 }
 

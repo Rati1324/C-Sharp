@@ -16,10 +16,10 @@ namespace Account
             string role, string branch):base(firstName, lastName, gender, id, dateOfBirth, country, city, phone,
             email)
         {
+
             this.password = password;
             this.role = role;
             this.branch = branch;
-            
         }
 
     }

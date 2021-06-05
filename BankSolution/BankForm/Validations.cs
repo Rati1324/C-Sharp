@@ -21,7 +21,7 @@ namespace BankForm
           
         public static string validId(string id)
         {
-            if (!(Regex.IsMatch(id, @"^\d+$") && id.Length == 11))
+            if (!(Regex.IsMatch(id, @"^\d+$") || id.Length == 11))
             {
                 return "Not a valid ID";
             }
@@ -41,7 +41,7 @@ namespace BankForm
         public static string validPhone(string phone)
         {
             string error = "";
-            if (phone.Length != 9 && !Regex.IsMatch(phone, @"^\d+$"))
+            if (phone.Length != 9 || !Regex.IsMatch(phone, @"^\d+$"))
                 error = "Not a valid phone number";
             return error;
         }
