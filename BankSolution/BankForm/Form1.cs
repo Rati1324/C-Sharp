@@ -24,20 +24,7 @@ namespace BankForm
         public Form1()
         {
             InitializeComponent();
-            // person country and gender values are alredy added in degisner.cs for some reason????? 
-            //countryPerson.Items.AddRange(new object[] { "Georgia", "Tbilisi" });
-            countryPerson.DropDownStyle = ComboBoxStyle.DropDownList;
-            countryPerson.SelectedIndex = 0;
-
-            cityPerson.DropDownStyle = ComboBoxStyle.DropDownList;
-            cityPerson.SelectedIndex = 0;
-
-            genderPerson.DropDownStyle = ComboBoxStyle.DropDownList;
-            genderPerson.SelectedIndex = 0;
-
-            guarantorRelation.DropDownStyle = ComboBoxStyle.DropDownList;
-            guarantorRelation.SelectedIndex = 0;
-
+            #region user
             genderUser.Items.AddRange(new object[] { "Male", "Female" });
             genderUser.DropDownStyle = ComboBoxStyle.DropDownList;
             genderUser.SelectedIndex = 0;
@@ -46,10 +33,15 @@ namespace BankForm
             countryUser.DropDownStyle = ComboBoxStyle.DropDownList;
             countryUser.SelectedIndex = 0;
 
+            // cities added automatically
+            //foreach (var city in Cities["Georgia"])
+            //{
+            //    cityUser.Items.Add(city);
+            //}
             cityUser.DropDownStyle = ComboBoxStyle.DropDownList;
             cityUser.SelectedIndex = 0;
 
-            // these also get added automaticaly
+            //these also get added automaticaly
             //branch.Items.AddRange(new object[] { "Branch 1", "Branch 2", "Branch 3" });
             //role.Items.AddRange(new object[] { "Manager", "Bank teller", "Customer Support" });
 
@@ -58,15 +50,28 @@ namespace BankForm
 
             role.DropDownStyle = ComboBoxStyle.DropDownList;
             role.SelectedIndex = 0;
-        }
+            #endregion
 
-        private void countryPerson_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            cityPerson.Items.Clear();
-            foreach (var elem in Cities[countryPerson.Text])
-            {
-                cityPerson.Items.Add(elem);
-            }
+            #region person
+            // person country and gender values are alredy added in degisner.cs for some reason????? 
+            //countryPerson.Items.AddRange(new object[] { "Georgia", "Tbilisi" });
+            countryPerson.DropDownStyle = ComboBoxStyle.DropDownList;
+            countryPerson.SelectedIndex = 0;
+
+            //foreach (var city in Cities["Georgia"])
+            //{
+            //    cityPerson.Items.Add(city);
+            //}
+            cityPerson.DropDownStyle = ComboBoxStyle.DropDownList;
+            cityPerson.SelectedIndex = 0;
+
+            genderPerson.Items.AddRange(new object[] { "Male", "Female" });
+            genderPerson.DropDownStyle = ComboBoxStyle.DropDownList;
+            genderPerson.SelectedIndex = 0;
+
+            guarantorRelation.DropDownStyle = ComboBoxStyle.DropDownList;
+            guarantorRelation.SelectedIndex = 0;
+            #endregion
         }
 
         private void countryUser_SelectedIndexChanged(object sender, EventArgs e)
@@ -76,23 +81,17 @@ namespace BankForm
             {
                 cityUser.Items.Add(elem);
             }
-            
+            cityUser.SelectedIndex = 0;
         }
 
-        private void userRegisterTab_Click(object sender, EventArgs e)
+        private void countryPerson_SelectedIndexChanged(object sender, EventArgs e)
         {
-            loginPanel.Hide();
-            //userRegisterPanel.BringToFront();
-            userRegisterTab.Hide();
-            userLoginTab.Show();
-        }
-
-        private void userLoginTab_Click(object sender, EventArgs e)
-        {
-            loginPanel.Show();
-            //loginPanel.BringToFront();
-            userLoginTab.Hide();
-            userRegisterTab.Show();
+            cityPerson.Items.Clear();
+            foreach (var elem in Cities[countryPerson.Text])
+            {
+                cityPerson.Items.Add(elem);
+            }
+            cityPerson.SelectedIndex = 0;
         }
 
         private void registerPerson_Click(object sender, EventArgs e)
@@ -178,7 +177,7 @@ namespace BankForm
             #endregion
         }
 
-       
+        
     }
 }
 
