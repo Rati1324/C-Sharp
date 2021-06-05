@@ -106,6 +106,7 @@ namespace BankForm
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.test = new System.Windows.Forms.Label();
             this.getAll = new System.Windows.Forms.Button();
             this.peopleList = new System.Windows.Forms.DataGridView();
             this.GUIDCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -114,15 +115,14 @@ namespace BankForm
             this.IDCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cityCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.countryCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.guarantorRelCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dobCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.guarantorRelCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guarantorIDCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.save = new System.Windows.Forms.DataGridViewButtonColumn();
             this.delete = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.test = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -878,6 +878,15 @@ namespace BankForm
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // test
+            // 
+            this.test.AutoSize = true;
+            this.test.Location = new System.Drawing.Point(186, 18);
+            this.test.Name = "test";
+            this.test.Size = new System.Drawing.Size(35, 13);
+            this.test.TabIndex = 2;
+            this.test.Text = "label1";
+            // 
             // getAll
             // 
             this.getAll.Location = new System.Drawing.Point(16, 8);
@@ -898,11 +907,11 @@ namespace BankForm
             this.IDCol,
             this.cityCol,
             this.countryCol,
-            this.guarantorRelCol,
             this.gender,
             this.dobCol,
             this.emailCol,
             this.phoneCol,
+            this.guarantorRelCol,
             this.guarantorIDCol,
             this.save,
             this.delete});
@@ -942,11 +951,6 @@ namespace BankForm
             this.countryCol.HeaderText = "Country";
             this.countryCol.Name = "countryCol";
             // 
-            // guarantorRelCol
-            // 
-            this.guarantorRelCol.HeaderText = "Guarantor Relation";
-            this.guarantorRelCol.Name = "guarantorRelCol";
-            // 
             // gender
             // 
             this.gender.HeaderText = "Gender";
@@ -967,6 +971,11 @@ namespace BankForm
             this.phoneCol.HeaderText = "phone";
             this.phoneCol.Name = "phoneCol";
             // 
+            // guarantorRelCol
+            // 
+            this.guarantorRelCol.HeaderText = "Guarantor Relation";
+            this.guarantorRelCol.Name = "guarantorRelCol";
+            // 
             // guarantorIDCol
             // 
             this.guarantorIDCol.HeaderText = "Guarantor ID";
@@ -982,15 +991,6 @@ namespace BankForm
             // 
             this.delete.HeaderText = "Delete";
             this.delete.Name = "delete";
-            // 
-            // test
-            // 
-            this.test.AutoSize = true;
-            this.test.Location = new System.Drawing.Point(186, 18);
-            this.test.Name = "test";
-            this.test.Size = new System.Drawing.Size(35, 13);
-            this.test.TabIndex = 2;
-            this.test.Text = "label1";
             // 
             // Form1
             // 
@@ -1091,20 +1091,20 @@ namespace BankForm
         private Button getAll;
         private Button registerUser;
         private Button registerPerson;
+        private Label test;
         private DataGridViewTextBoxColumn GUIDCol;
         private DataGridViewTextBoxColumn firstNameCol;
         private DataGridViewTextBoxColumn lastNameCol;
         private DataGridViewTextBoxColumn IDCol;
         private DataGridViewTextBoxColumn cityCol;
         private DataGridViewTextBoxColumn countryCol;
-        private DataGridViewTextBoxColumn guarantorRelCol;
         private DataGridViewTextBoxColumn gender;
         private DataGridViewTextBoxColumn dobCol;
         private DataGridViewTextBoxColumn emailCol;
         private DataGridViewTextBoxColumn phoneCol;
+        private DataGridViewTextBoxColumn guarantorRelCol;
         private DataGridViewTextBoxColumn guarantorIDCol;
         private DataGridViewButtonColumn save;
         private DataGridViewButtonColumn delete;
-        private Label test;
     }
 }

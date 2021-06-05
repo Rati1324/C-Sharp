@@ -197,19 +197,25 @@ namespace BankForm
                 peopleList.Rows[n].Cells[3].Value = p.Element("ID").Value;
                 peopleList.Rows[n].Cells[4].Value = p.Element("City").Value;
                 peopleList.Rows[n].Cells[5].Value = p.Element("Country").Value;
-                peopleList.Rows[n].Cells[6].Value = p.Element("Guarantor_Relation").Value;
-                peopleList.Rows[n].Cells[7].Value = p.Element("Guarantor_Id").Value;
+                peopleList.Rows[n].Cells[6].Value = p.Element("Gender").Value;
+                peopleList.Rows[n].Cells[7].Value = p.Element("DateOfBirth").Value;
+                peopleList.Rows[n].Cells[8].Value = p.Element("Email").Value;
+                peopleList.Rows[n].Cells[9].Value = p.Element("Phone").Value;
+                peopleList.Rows[n].Cells[10].Value = p.Element("Guarantor_Relation").Value;
+                peopleList.Rows[n].Cells[11].Value = p.Element("Guarantor_Id").Value;
             }
         }
 
         private void peopleList_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            
-            if (e.ColumnIndex == peopleList.Columns["save"].Index)
+            if (peopleList.Columns["save"].Index == e.ColumnIndex)
             {
-                test.Text = peopleList.Rows[e.RowIndex].Cells[4].Value.ToString();
+                foreach (DataGridViewCell item in peopleList.Rows[e.RowIndex].Cells)
+                {
+                    if (item.ColumnIndex == peopleList.Columns["save"].Index) break;
+                    test.Text = item.Value.ToString();
+                }
             }
-            
         }
     }
 }

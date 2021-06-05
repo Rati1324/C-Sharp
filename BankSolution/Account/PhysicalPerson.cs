@@ -51,12 +51,21 @@ namespace Account
             this.phone = phone;
             this.email = email;
         }
-
         public static IEnumerable<XElement> getAllPeople()
         {
             XElement X = XElement.Load("People.xml");
             var people = X.Elements();
             return people;
+        }
+        public static void editPerson(List<string> newInfo)
+        {
+            
+            var X = XElement.Load("../../../BankForm/bin/Debug/People.xml");
+            var P = X.Elements("Person");
+            //var p = P.Where(y => y.Element("ID").Value == newInfo[3]).First();
+            //p.SetElementValue("GUID", newInfo[0]);
+            //p.SetElementValue("First", newInfo[1]);
+            //p.SetElementValue("Last", newInfo[1]);
         }
     }
 }
