@@ -112,6 +112,13 @@ namespace BankForm
             this.firstNameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastNameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IDCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cityCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.countryCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.guarantorRelCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dobCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -124,10 +131,10 @@ namespace BankForm
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(178, 12);
+            this.tabControl1.Location = new System.Drawing.Point(-1, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(633, 661);
+            this.tabControl1.Size = new System.Drawing.Size(1143, 702);
             this.tabControl1.TabIndex = 19;
             // 
             // tabPage1
@@ -174,7 +181,7 @@ namespace BankForm
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(625, 635);
+            this.tabPage1.Size = new System.Drawing.Size(1015, 676);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -549,7 +556,7 @@ namespace BankForm
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(625, 635);
+            this.tabPage2.Size = new System.Drawing.Size(1015, 676);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -841,7 +848,7 @@ namespace BankForm
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(625, 635);
+            this.tabPage3.Size = new System.Drawing.Size(1135, 676);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -863,10 +870,17 @@ namespace BankForm
             this.GUIDCol,
             this.firstNameCol,
             this.lastNameCol,
-            this.IDCol});
-            this.peopleList.Location = new System.Drawing.Point(3, 107);
+            this.IDCol,
+            this.cityCol,
+            this.countryCol,
+            this.guarantorRelCol,
+            this.gender,
+            this.dobCol,
+            this.emailCol,
+            this.phoneCol});
+            this.peopleList.Location = new System.Drawing.Point(0, 73);
             this.peopleList.Name = "peopleList";
-            this.peopleList.Size = new System.Drawing.Size(622, 311);
+            this.peopleList.Size = new System.Drawing.Size(1126, 311);
             this.peopleList.TabIndex = 0;
             // 
             // registerUser
@@ -909,11 +923,46 @@ namespace BankForm
             this.IDCol.HeaderText = "ID";
             this.IDCol.Name = "IDCol";
             // 
+            // cityCol
+            // 
+            this.cityCol.HeaderText = "City";
+            this.cityCol.Name = "cityCol";
+            // 
+            // countryCol
+            // 
+            this.countryCol.HeaderText = "Country";
+            this.countryCol.Name = "countryCol";
+            // 
+            // guarantorRelCol
+            // 
+            this.guarantorRelCol.HeaderText = "Guarantor Relation";
+            this.guarantorRelCol.Name = "guarantorRelCol";
+            // 
+            // gender
+            // 
+            this.gender.HeaderText = "Gender";
+            this.gender.Name = "gender";
+            // 
+            // dobCol
+            // 
+            this.dobCol.HeaderText = "Date of Birth";
+            this.dobCol.Name = "dobCol";
+            // 
+            // emailCol
+            // 
+            this.emailCol.HeaderText = "Email";
+            this.emailCol.Name = "emailCol";
+            // 
+            // phoneCol
+            // 
+            this.phoneCol.HeaderText = "phone";
+            this.phoneCol.Name = "phoneCol";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1020, 711);
+            this.ClientSize = new System.Drawing.Size(1201, 711);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -1011,5 +1060,12 @@ namespace BankForm
         private DataGridViewTextBoxColumn firstNameCol;
         private DataGridViewTextBoxColumn lastNameCol;
         private DataGridViewTextBoxColumn IDCol;
+        private DataGridViewTextBoxColumn cityCol;
+        private DataGridViewTextBoxColumn countryCol;
+        private DataGridViewTextBoxColumn guarantorRelCol;
+        private DataGridViewTextBoxColumn gender;
+        private DataGridViewTextBoxColumn dobCol;
+        private DataGridViewTextBoxColumn emailCol;
+        private DataGridViewTextBoxColumn phoneCol;
     }
 }

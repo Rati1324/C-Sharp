@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Account
 {
@@ -51,5 +52,11 @@ namespace Account
             this.email = email;
         }
 
+        public static IEnumerable<XElement> getAllPeople()
+        {
+            XElement X = XElement.Load("People.xml");
+            var people = X.Elements();
+            return people;
+        }
     }
 }

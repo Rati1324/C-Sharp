@@ -183,8 +183,7 @@ namespace BankForm
 
         private void getAll_Click(object sender, EventArgs e)
         {
-            XElement X = XElement.Load("People.xml");
-            var people = X.Elements();
+            var people = Account.PhysicalPerson.getAllPeople();
             foreach (var p in people)
             {
                 int n = peopleList.Rows.Add();
