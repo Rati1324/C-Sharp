@@ -109,9 +109,17 @@ namespace BankForm
             this.passwordUser = new System.Windows.Forms.TextBox();
             this.userRegisterTab = new System.Windows.Forms.Button();
             this.userLoginTab = new System.Windows.Forms.Button();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button3 = new System.Windows.Forms.Button();
             this.personRegisterPanel.SuspendLayout();
             this.loginPanel.SuspendLayout();
             this.userRegisterPanel.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label9
@@ -184,8 +192,6 @@ namespace BankForm
             // 
             // personRegisterPanel
             // 
-            this.personRegisterPanel.Controls.Add(this.loginPanel);
-            this.personRegisterPanel.Controls.Add(this.userRegisterPanel);
             this.personRegisterPanel.Controls.Add(this.registerPerson);
             this.personRegisterPanel.Controls.Add(this.phonePerson);
             this.personRegisterPanel.Controls.Add(this.firstNamePerson);
@@ -218,6 +224,7 @@ namespace BankForm
             this.personRegisterPanel.Controls.Add(this.guarantorRelation);
             this.personRegisterPanel.Controls.Add(this.label10);
             this.personRegisterPanel.Controls.Add(this.label9);
+            this.personRegisterPanel.Controls.Add(this.loginPanel);
             this.personRegisterPanel.Location = new System.Drawing.Point(214, -1);
             this.personRegisterPanel.Name = "personRegisterPanel";
             this.personRegisterPanel.Size = new System.Drawing.Size(482, 592);
@@ -511,6 +518,7 @@ namespace BankForm
             // 
             // userRegisterPanel
             // 
+            this.userRegisterPanel.Controls.Add(this.tabControl1);
             this.userRegisterPanel.Controls.Add(this.label12);
             this.userRegisterPanel.Controls.Add(this.label6);
             this.userRegisterPanel.Controls.Add(this.role);
@@ -546,7 +554,7 @@ namespace BankForm
             this.userRegisterPanel.Controls.Add(this.label15);
             this.userRegisterPanel.Controls.Add(this.passwordConfirm);
             this.userRegisterPanel.Controls.Add(this.passwordUser);
-            this.userRegisterPanel.Location = new System.Drawing.Point(31, 3);
+            this.userRegisterPanel.Location = new System.Drawing.Point(166, 18);
             this.userRegisterPanel.Name = "userRegisterPanel";
             this.userRegisterPanel.Size = new System.Drawing.Size(482, 592);
             this.userRegisterPanel.TabIndex = 16;
@@ -879,11 +887,62 @@ namespace BankForm
             this.userLoginTab.UseVisualStyleBackColor = true;
             this.userLoginTab.Click += new System.EventHandler(this.userLoginTab_Click);
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(311, 63);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(566, 476);
+            this.tabControl1.TabIndex = 19;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(558, 450);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(54, 78);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.button3);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(558, 450);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(138, 86);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1020, 632);
+            this.Controls.Add(this.userRegisterPanel);
             this.Controls.Add(this.userRegisterTab);
             this.Controls.Add(this.userLoginTab);
             this.Controls.Add(this.personRegisterPanel);
@@ -895,6 +954,9 @@ namespace BankForm
             this.loginPanel.PerformLayout();
             this.userRegisterPanel.ResumeLayout(false);
             this.userRegisterPanel.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -978,5 +1040,10 @@ namespace BankForm
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox role;
+        private TabControl tabControl1;
+        private TabPage tabPage1;
+        private Button button1;
+        private TabPage tabPage2;
+        private Button button3;
     }
 }

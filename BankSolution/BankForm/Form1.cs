@@ -9,7 +9,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Xml.Linq;
 
 namespace BankForm
 {
@@ -148,15 +148,37 @@ namespace BankForm
             emailErrorUser.Text = Validations.validEmail(emailUser.Text);
             if (emailErrorUser.Text != "") valid = false;
 
+            valid = true;
+
             if (valid)
             {
 
+                Account.AuthUser A = new Account.AuthUser(firstNameUser.Text,
+                    lastNameUser.Text, genderUser.SelectedItem.ToString(), idUser.Text, dobUser.Value, countryUser.Text, cityUser.Text,
+                    phoneUser.Text, emailUser.Text, passwordUser.Text, role.Text, branch.Text
+                    );
+                XDocument D = XDocument.Load("Users.xml");
+                D.Element("Users").Add(new XElement("Person",
+                    new XElement("GUID", A.GuID),
+                    new XElement("Name",
+                        new XElement("First", firstNameUser.Text),
+                        new XElement("Last", lastNameUser.Text)),
+                    new XElement("Gender", genderUser.SelectedItem),
+                    new XElement("DateOfBirth", dobUser.Value.ToString("yyyyy:MM:dd")),
+                    new XElement("ID", idUser.Text),
+                    new XElement("Country", countryUser.SelectedItem),
+                    new XElement("City", cityUser.SelectedItem),
+                    new XElement("Phone", phoneUser.Text),
+                    new XElement("Email", emailUser.Text),
+                    new XElement("Password", passwordUser.Text)
+                    ));
+                D.Save("C:/Users/rati/source/repos/C-Sharp/BankSolution/BankForm/bin/Debug/Users.xml");
             }
 
             #endregion
         }
 
-        
+       
     }
 }
 

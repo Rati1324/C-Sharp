@@ -20,7 +20,7 @@ namespace Account
         private string email;
         private string guarantorRelation;
         private string guarantorId;
-
+        public string GuID {get => this.guid;}
         public PhysicalPerson(string firstName, string lastName, string gender, string id, DateTime dateOfBirth, 
             string country, string city, string phone, string email, string guarantorRelation, string guarantorId)
         {
