@@ -11,22 +11,15 @@ namespace Bank
     {
         static void Main(string[] args)
         {
-            var X = XElement.Load("../../../BankForm/bin/Debug/Users.xml");
-            var U = X.Elements("User");
-            var x = U.Where(y => y.Element("ID").Value == "1212121212").First();
-            var elems = x.Elements();
-            foreach (var item in elems)
+            var X = XElement.Load("../../../BankForm/bin/Debug/People.xml");
+            var P = X.Elements("Person");
+            var d = from s in P
+                    select s.Element("Register_Date").Value;
+
+            foreach (var item in d)
             {
-                if (item.Descendants().Count() > 0)
-                {
-                    foreach (var desc in item.Descendants())
-                    {
-                        item.SetElementValue(desc.Name, "tttt");
-                    }
-                }
-                x.SetElementValue(item.Name, "test");
+                Console.WriteLine(DateTime.Parse(item) < DateTime.Now);
             }
-            X.Save("../../../BankForm/bin/Debug/Users.xml");
         }
     }
 }

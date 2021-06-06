@@ -151,6 +151,11 @@ namespace BankForm
             this.label29 = new System.Windows.Forms.Label();
             this.t = new System.Windows.Forms.Label();
             this.interestCredit = new System.Windows.Forms.TextBox();
+            this.fromDate = new System.Windows.Forms.DateTimePicker();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.toDate = new System.Windows.Forms.DateTimePicker();
+            this.dateIntervalSearch = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -899,6 +904,11 @@ namespace BankForm
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.dateIntervalSearch);
+            this.tabPage3.Controls.Add(this.toDate);
+            this.tabPage3.Controls.Add(this.fromDate);
+            this.tabPage3.Controls.Add(this.label43);
+            this.tabPage3.Controls.Add(this.label42);
             this.tabPage3.Controls.Add(this.test);
             this.tabPage3.Controls.Add(this.getAll);
             this.tabPage3.Controls.Add(this.peopleList);
@@ -913,7 +923,7 @@ namespace BankForm
             // test
             // 
             this.test.AutoSize = true;
-            this.test.Location = new System.Drawing.Point(186, 18);
+            this.test.Location = new System.Drawing.Point(412, 464);
             this.test.Name = "test";
             this.test.Size = new System.Drawing.Size(35, 13);
             this.test.TabIndex = 2;
@@ -1288,6 +1298,48 @@ namespace BankForm
             this.interestCredit.Size = new System.Drawing.Size(188, 20);
             this.interestCredit.TabIndex = 8;
             // 
+            // fromDate
+            // 
+            this.fromDate.Location = new System.Drawing.Point(385, 12);
+            this.fromDate.Name = "fromDate";
+            this.fromDate.Size = new System.Drawing.Size(200, 20);
+            this.fromDate.TabIndex = 3;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(348, 18);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(33, 13);
+            this.label42.TabIndex = 2;
+            this.label42.Text = "From:";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(623, 18);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(23, 13);
+            this.label43.TabIndex = 2;
+            this.label43.Text = "To:";
+            // 
+            // toDate
+            // 
+            this.toDate.Location = new System.Drawing.Point(651, 12);
+            this.toDate.Name = "toDate";
+            this.toDate.Size = new System.Drawing.Size(200, 20);
+            this.toDate.TabIndex = 4;
+            // 
+            // dateIntervalSearch
+            // 
+            this.dateIntervalSearch.Location = new System.Drawing.Point(880, 12);
+            this.dateIntervalSearch.Name = "dateIntervalSearch";
+            this.dateIntervalSearch.Size = new System.Drawing.Size(75, 23);
+            this.dateIntervalSearch.TabIndex = 5;
+            this.dateIntervalSearch.Text = "Search";
+            this.dateIntervalSearch.UseVisualStyleBackColor = true;
+            this.dateIntervalSearch.Click += new System.EventHandler(this.dateIntervalSearch_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1434,5 +1486,10 @@ namespace BankForm
         private Label label41;
         private TextBox interestCredit;
         private Label t;
+        private Button dateIntervalSearch;
+        private DateTimePicker toDate;
+        private DateTimePicker fromDate;
+        private Label label43;
+        private Label label42;
     }
 }

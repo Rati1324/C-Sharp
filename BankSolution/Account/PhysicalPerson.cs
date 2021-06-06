@@ -21,6 +21,7 @@ namespace Account
         private string email;
         private string guarantorRelation;
         private string guarantorId;
+        private DateTime registerDate;
         public string GuID {get => this.guid;}
         public PhysicalPerson(string firstName, string lastName, string gender, string id, DateTime dateOfBirth, 
             string country, string city, string phone, string email, string guarantorRelation, string guarantorId)
@@ -36,6 +37,7 @@ namespace Account
             this.email = email;
             this.guarantorRelation = guarantorRelation;
             this.guarantorId = guarantorId;
+            this.registerDate = DateTime.Now;
         }
 
         public PhysicalPerson(string firstName, string lastName, string gender, string id, DateTime dateOfBirth,
@@ -57,6 +59,7 @@ namespace Account
             var people = X.Elements();
             return people;
         }
+
         public static void editPerson(List<string> newInfo)
         {
             var X = XElement.Load("../../../BankForm/bin/Debug/People.xml");

@@ -175,14 +175,15 @@ namespace BankForm
                                 new XElement("First", firstNamePerson.Text),
                                 new XElement("Last", lastNamePerson.Text)),
                             new XElement("Gender", genderPerson.SelectedItem),
-                            new XElement("DateOfBirth", dobPerson.Value.ToString("yyyyy:MM:dd")),
+                            new XElement("DateOfBirth", dobPerson.Value.ToString("yyyy:MM:dd")),
                             new XElement("ID", idPerson.Text),
                             new XElement("Country", countryPerson.SelectedItem),
                             new XElement("City", cityPerson.SelectedItem),
                             new XElement("Phone", phonePerson.Text),
                             new XElement("Email", emailPerson.Text),
                             new XElement("Guarantor_Relation", guarantorRelation.SelectedItem),
-                            new XElement("Guarantor_Id", guarantorID.Text)
+                            new XElement("Guarantor_Id", guarantorID.Text),
+                            new XElement("Register_Date", DateTime.Now.ToString("yyyy:MM:dd"))
                             ));
                 D.Save("C:/Users/rati/source/repos/C-Sharp/BankSolution/BankForm/bin/Debug/People.xml");
             }
@@ -245,6 +246,35 @@ namespace BankForm
         {
             Actions.Credit C = new Actions.Credit(personID.Text, DateTime.Now, Decimal.Parse(amountCredit.Text),
                 currency.SelectedIndex.ToString(), Decimal.Parse(interestCredit.Text), DueDateCredit.Value, Decimal.Parse(amountCredit.Text));
+        }
+
+        private void dateIntervalSearch_Click(object sender, EventArgs e)
+        {
+            var X = XElement.Load("../../../BankForm/bin/Debug/People.xml");
+            var P = X.Elements("Person");
+            var people = from s in P
+                    where 
+                    DateTime.Parse(fromDate.Text) < DateTime.Parse(s.Element("Register_Date").Value) &&
+                    DateTime.Parse(s.Element("Register_Date").Value) < DateTime.Parse(toDate.Text)
+                    select s;
+                    
+            foreach (var p in people)
+            {
+                peopleList.Rows.Clear();
+                int n = peopleList.Rows.Add();
+                peopleList.Rows[n].Cells[0].Value = p.Element("GUID").Value;
+                peopleList.Rows[n].Cells[1].Value = p.Element("Name").Element("First").Value;
+                peopleList.Rows[n].Cells[2].Value = p.Element("Name").Element("Last").Value;
+                peopleList.Rows[n].Cells[3].Value = p.Element("ID").Value;
+                peopleList.Rows[n].Cells[4].Value = p.Element("City").Value;
+                peopleList.Rows[n].Cells[5].Value = p.Element("Country").Value;
+                peopleList.Rows[n].Cells[6].Value = p.Element("Gender").Value;
+                peopleList.Rows[n].Cells[7].Value = p.Element("DateOfBirth").Value;
+                peopleList.Rows[n].Cells[8].Value = p.Element("Email").Value;
+                peopleList.Rows[n].Cells[9].Value = p.Element("Phone").Value;
+                peopleList.Rows[n].Cells[10].Value = p.Element("Guarantor_Relation").Value;
+                peopleList.Rows[n].Cells[11].Value = p.Element("Guarantor_Id").Value;
+            }
         }
     }
 }
