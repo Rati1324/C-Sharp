@@ -85,6 +85,10 @@
       <Project>{a7da9937-d490-442f-a17c-e89754c5e5dc}</Project>
       <Name>Account</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Actions\Actions.csproj">
+      <Project>{3c2c2ec2-9c77-42b5-b7e1-f8ec773c8a5f}</Project>
+      <Name>Actions</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

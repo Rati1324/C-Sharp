@@ -57,22 +57,21 @@ namespace BankForm
             //countryPerson.Items.AddRange(new object[] { "Georgia", "Tbilisi" });
             countryPerson.DropDownStyle = ComboBoxStyle.DropDownList;
             countryPerson.SelectedIndex = 0;
-
-            //foreach (var city in Cities["Georgia"])
-            //{
-            //    cityPerson.Items.Add(city);
-            //}
+            
             cityPerson.DropDownStyle = ComboBoxStyle.DropDownList;
             cityPerson.SelectedIndex = 0;
 
-            //genderPerson.Items.AddRange(new object[] { "Male", "Female" });
             genderPerson.DropDownStyle = ComboBoxStyle.DropDownList;
             genderPerson.SelectedIndex = 0;
 
             guarantorRelation.DropDownStyle = ComboBoxStyle.DropDownList;
             guarantorRelation.SelectedIndex = 0;
             #endregion
-
+            currency.Items.Add("GEL");
+            currency.Items.Add("USD");
+            currency.Items.Add("EURO");
+            currency.SelectedIndex = 0;
+            currency.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
         private void countryUser_SelectedIndexChanged(object sender, EventArgs e)
@@ -231,7 +230,10 @@ namespace BankForm
             }
         }
 
-       
+        private void deposit_Click(object sender, EventArgs e)
+        {
+            Actions.Deposit D = new Actions.Deposit(personID.Text, DateTime.Now, Decimal.Parse(moneyAmount.Text), 
+                currency.SelectedItem.ToString(), Decimal.Parse(interest.Text), userID.Text);   
+        }
     }
 }
-

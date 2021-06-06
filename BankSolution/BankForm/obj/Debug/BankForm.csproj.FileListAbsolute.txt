@@ -21,3 +21,5 @@ C:\Users\rati\source\repos\C-Sharp\BankSolution\BankForm\obj\Debug\BankForm.Form
 C:\Users\rati\source\repos\C-Sharp\BankSolution\BankForm\bin\Debug\Account.dll
 C:\Users\rati\source\repos\C-Sharp\BankSolution\BankForm\bin\Debug\Account.pdb
 C:\Users\rati\source\repos\C-Sharp\BankSolution\BankForm\obj\Debug\BankForm.csproj.CopyComplete
+C:\Users\rati\source\repos\C-Sharp\BankSolution\BankForm\bin\Debug\Actions.dll
+C:\Users\rati\source\repos\C-Sharp\BankSolution\BankForm\bin\Debug\Actions.pdb

@@ -1,0 +1,6 @@
+C:\Users\rati\source\repos\C-Sharp\BankSolution\Actions\bin\Debug\Actions.dll
+C:\Users\rati\source\repos\C-Sharp\BankSolution\Actions\bin\Debug\Actions.pdb
+C:\Users\rati\source\repos\C-Sharp\BankSolution\Actions\obj\Debug\Actions.csproj.AssemblyReference.cache
+C:\Users\rati\source\repos\C-Sharp\BankSolution\Actions\obj\Debug\Actions.csproj.CoreCompileInputs.cache
+C:\Users\rati\source\repos\C-Sharp\BankSolution\Actions\obj\Debug\Actions.dll
+C:\Users\rati\source\repos\C-Sharp\BankSolution\Actions\obj\Debug\Actions.pdb

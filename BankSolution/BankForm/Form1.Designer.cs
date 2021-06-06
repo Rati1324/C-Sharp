@@ -123,11 +123,25 @@ namespace BankForm
             this.guarantorIDCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.save = new System.Windows.Forms.DataGridViewButtonColumn();
             this.delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.userID = new System.Windows.Forms.TextBox();
+            this.interest = new System.Windows.Forms.TextBox();
+            this.currency = new System.Windows.Forms.ComboBox();
+            this.moneyAmount = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.personID = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.deposit = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.peopleList)).BeginInit();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -135,6 +149,7 @@ namespace BankForm
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(-1, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -992,6 +1007,129 @@ namespace BankForm
             this.delete.HeaderText = "Delete";
             this.delete.Name = "delete";
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.deposit);
+            this.tabPage4.Controls.Add(this.userID);
+            this.tabPage4.Controls.Add(this.interest);
+            this.tabPage4.Controls.Add(this.currency);
+            this.tabPage4.Controls.Add(this.moneyAmount);
+            this.tabPage4.Controls.Add(this.label26);
+            this.tabPage4.Controls.Add(this.label19);
+            this.tabPage4.Controls.Add(this.label14);
+            this.tabPage4.Controls.Add(this.label5);
+            this.tabPage4.Controls.Add(this.label2);
+            this.tabPage4.Controls.Add(this.personID);
+            this.tabPage4.Controls.Add(this.label1);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1444, 676);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "tabPage4";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // userID
+            // 
+            this.userID.Location = new System.Drawing.Point(463, 213);
+            this.userID.Name = "userID";
+            this.userID.Size = new System.Drawing.Size(163, 20);
+            this.userID.TabIndex = 5;
+            // 
+            // interest
+            // 
+            this.interest.Location = new System.Drawing.Point(463, 179);
+            this.interest.Name = "interest";
+            this.interest.Size = new System.Drawing.Size(163, 20);
+            this.interest.TabIndex = 5;
+            // 
+            // currency
+            // 
+            this.currency.FormattingEnabled = true;
+            this.currency.Location = new System.Drawing.Point(463, 142);
+            this.currency.Name = "currency";
+            this.currency.Size = new System.Drawing.Size(163, 21);
+            this.currency.TabIndex = 4;
+            // 
+            // moneyAmount
+            // 
+            this.moneyAmount.Location = new System.Drawing.Point(463, 105);
+            this.moneyAmount.Name = "moneyAmount";
+            this.moneyAmount.Size = new System.Drawing.Size(163, 20);
+            this.moneyAmount.TabIndex = 3;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(407, 185);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(45, 13);
+            this.label19.TabIndex = 2;
+            this.label19.Text = "Interest:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(401, 146);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(52, 13);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "Currency:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(408, 109);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(46, 13);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Amount:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(397, 75);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(57, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Person ID:";
+            // 
+            // personID
+            // 
+            this.personID.Location = new System.Drawing.Point(463, 69);
+            this.personID.Name = "personID";
+            this.personID.Size = new System.Drawing.Size(163, 20);
+            this.personID.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(499, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Deposit";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(407, 218);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(46, 13);
+            this.label26.TabIndex = 2;
+            this.label26.Text = "User ID:";
+            // 
+            // deposit
+            // 
+            this.deposit.Location = new System.Drawing.Point(551, 253);
+            this.deposit.Name = "deposit";
+            this.deposit.Size = new System.Drawing.Size(75, 23);
+            this.deposit.TabIndex = 6;
+            this.deposit.Text = "Submit";
+            this.deposit.UseVisualStyleBackColor = true;
+            this.deposit.Click += new System.EventHandler(this.deposit_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1008,6 +1146,8 @@ namespace BankForm
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.peopleList)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1106,5 +1246,18 @@ namespace BankForm
         private DataGridViewTextBoxColumn guarantorIDCol;
         private DataGridViewButtonColumn save;
         private DataGridViewButtonColumn delete;
+        private TabPage tabPage4;
+        private TextBox moneyAmount;
+        private Label label2;
+        private TextBox personID;
+        private Label label1;
+        private TextBox interest;
+        private ComboBox currency;
+        private Label label19;
+        private Label label14;
+        private Label label5;
+        private TextBox userID;
+        private Button deposit;
+        private Label label26;
     }
 }
