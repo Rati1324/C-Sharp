@@ -1,33 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Users>
   <User>
-    <GUID>553bd4a5-8b6c-4a5e-9680-9ff86f4f4d4b</GUID>
-    <Name>
-      <First>wqdwq</First>
-      <Last>dqwqwd</Last>
-    </Name>
-    <Gender>Male</Gender>
-    <DateOfBirth>01988:12:25</DateOfBirth>
-    <ID>1212121212</ID>
-    <Country>Georgia</Country>
-    <City>asd2</City>
-    <Phone>121212121</Phone>
-    <Email>sad@sad.com21e211</Email>
-    <Password>e12</Password>
-  </User>
-  <User>
-    <GUID>553bd4a5-8b6c-4a5e-9680-9ff86f4f4d4b</GUID>
-    <Name>
-      <First>rrr</First>
-      <Last>rrrrrrrrr</Last>
-    </Name>
-    <Gender>Female</Gender>
-    <DateOfBirth>01988:12:25</DateOfBirth>
-    <ID>23232323232</ID>
-    <Country>Georgia</Country>
-    <City>Tbilisi</City>
-    <Phone>121212121</Phone>
-    <Email>sad@sad.com21e211</Email>
-    <Password>e12</Password>
+    <GUID>test</GUID>
+    <Name>test</Name>
+    <Gender>test</Gender>
+    <DateOfBirth>test</DateOfBirth>
+    <ID>test</ID>
+    <Country>test</Country>
+    <City>test</City>
+    <Phone>test</Phone>
+    <Email>test</Email>
+    <Password>test</Password>
   </User>
 </Users>

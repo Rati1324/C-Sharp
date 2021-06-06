@@ -62,10 +62,21 @@ namespace Account
             
             var X = XElement.Load("../../../BankForm/bin/Debug/People.xml");
             var P = X.Elements("Person");
-            //var p = P.Where(y => y.Element("ID").Value == newInfo[3]).First();
-            //p.SetElementValue("GUID", newInfo[0]);
-            //p.SetElementValue("First", newInfo[1]);
-            //p.SetElementValue("Last", newInfo[1]);
+            var p = P.Where(y => y.Element("ID").Value == newInfo[3].ToString()).First();
+            p.SetElementValue("GUID", newInfo[0]);
+            p.Element("Name").SetElementValue("First", newInfo[1]);
+            p.Element("Name").SetElementValue("Last", newInfo[2]);
+            p.SetElementValue("ID", newInfo[3]);
+            p.SetElementValue("City", newInfo[4]);
+            p.SetElementValue("Country", newInfo[5]);
+            p.SetElementValue("Gender", newInfo[6]);
+            p.SetElementValue("DateOfBirth", newInfo[7]);
+            p.SetElementValue("Email", newInfo[8]);
+            p.SetElementValue("Phone", newInfo[9]);
+            p.SetElementValue("Guarantor_Relation", newInfo[10]);
+            p.SetElementValue("Guarantor_Id", newInfo[11]);
+            X.Save("../../../BankForm/bin/Debug/People.xml");
+
         }
     }
 }

@@ -210,11 +210,15 @@ namespace BankForm
         {
             if (peopleList.Columns["save"].Index == e.ColumnIndex)
             {
+                List<string> newInfo = new List<string>();
                 foreach (DataGridViewCell item in peopleList.Rows[e.RowIndex].Cells)
                 {
                     if (item.ColumnIndex == peopleList.Columns["save"].Index) break;
-                    test.Text = item.Value.ToString();
+                    newInfo.Add(item.Value.ToString());
                 }
+                Account.PhysicalPerson.editPerson(newInfo);
+
+                peopleList.Update();
             }
         }
     }
