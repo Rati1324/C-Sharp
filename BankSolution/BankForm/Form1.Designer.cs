@@ -124,24 +124,40 @@ namespace BankForm
             this.save = new System.Windows.Forms.DataGridViewButtonColumn();
             this.delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.userID = new System.Windows.Forms.TextBox();
             this.interest = new System.Windows.Forms.TextBox();
+            this.deposit = new System.Windows.Forms.Button();
+            this.userID = new System.Windows.Forms.TextBox();
             this.currency = new System.Windows.Forms.ComboBox();
             this.moneyAmount = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.personID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.deposit = new System.Windows.Forms.Button();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.userIDCredit = new System.Windows.Forms.TextBox();
+            this.submitCredit = new System.Windows.Forms.Button();
+            this.DueDateCredit = new System.Windows.Forms.DateTimePicker();
+            this.currencyCredit = new System.Windows.Forms.ComboBox();
+            this.amountCredit = new System.Windows.Forms.TextBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.personIdCredit = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.t = new System.Windows.Forms.Label();
+            this.interestCredit = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.peopleList)).BeginInit();
             this.tabPage4.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -150,6 +166,7 @@ namespace BankForm
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Location = new System.Drawing.Point(-1, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -1009,13 +1026,13 @@ namespace BankForm
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.interest);
             this.tabPage4.Controls.Add(this.deposit);
             this.tabPage4.Controls.Add(this.userID);
-            this.tabPage4.Controls.Add(this.interest);
             this.tabPage4.Controls.Add(this.currency);
             this.tabPage4.Controls.Add(this.moneyAmount);
+            this.tabPage4.Controls.Add(this.label41);
             this.tabPage4.Controls.Add(this.label26);
-            this.tabPage4.Controls.Add(this.label19);
             this.tabPage4.Controls.Add(this.label14);
             this.tabPage4.Controls.Add(this.label5);
             this.tabPage4.Controls.Add(this.label2);
@@ -1029,19 +1046,29 @@ namespace BankForm
             this.tabPage4.Text = "tabPage4";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // interest
+            // 
+            this.interest.Location = new System.Drawing.Point(463, 219);
+            this.interest.Name = "interest";
+            this.interest.Size = new System.Drawing.Size(163, 20);
+            this.interest.TabIndex = 7;
+            // 
+            // deposit
+            // 
+            this.deposit.Location = new System.Drawing.Point(551, 253);
+            this.deposit.Name = "deposit";
+            this.deposit.Size = new System.Drawing.Size(75, 23);
+            this.deposit.TabIndex = 6;
+            this.deposit.Text = "Submit";
+            this.deposit.UseVisualStyleBackColor = true;
+            this.deposit.Click += new System.EventHandler(this.deposit_Click);
+            // 
             // userID
             // 
-            this.userID.Location = new System.Drawing.Point(463, 213);
+            this.userID.Location = new System.Drawing.Point(463, 177);
             this.userID.Name = "userID";
             this.userID.Size = new System.Drawing.Size(163, 20);
             this.userID.TabIndex = 5;
-            // 
-            // interest
-            // 
-            this.interest.Location = new System.Drawing.Point(463, 179);
-            this.interest.Name = "interest";
-            this.interest.Size = new System.Drawing.Size(163, 20);
-            this.interest.TabIndex = 5;
             // 
             // currency
             // 
@@ -1058,14 +1085,23 @@ namespace BankForm
             this.moneyAmount.Size = new System.Drawing.Size(163, 20);
             this.moneyAmount.TabIndex = 3;
             // 
-            // label19
+            // label41
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(407, 185);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(45, 13);
-            this.label19.TabIndex = 2;
-            this.label19.Text = "Interest:";
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(410, 222);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(45, 13);
+            this.label41.TabIndex = 2;
+            this.label41.Text = "Interest:";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(407, 182);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(46, 13);
+            this.label26.TabIndex = 2;
+            this.label26.Text = "User ID:";
             // 
             // label14
             // 
@@ -1111,24 +1147,146 @@ namespace BankForm
             this.label1.TabIndex = 0;
             this.label1.Text = "Deposit";
             // 
-            // label26
+            // tabPage5
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(407, 218);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(46, 13);
-            this.label26.TabIndex = 2;
-            this.label26.Text = "User ID:";
+            this.tabPage5.Controls.Add(this.interestCredit);
+            this.tabPage5.Controls.Add(this.userIDCredit);
+            this.tabPage5.Controls.Add(this.submitCredit);
+            this.tabPage5.Controls.Add(this.DueDateCredit);
+            this.tabPage5.Controls.Add(this.currencyCredit);
+            this.tabPage5.Controls.Add(this.amountCredit);
+            this.tabPage5.Controls.Add(this.label40);
+            this.tabPage5.Controls.Add(this.label19);
+            this.tabPage5.Controls.Add(this.t);
+            this.tabPage5.Controls.Add(this.label39);
+            this.tabPage5.Controls.Add(this.label37);
+            this.tabPage5.Controls.Add(this.label34);
+            this.tabPage5.Controls.Add(this.personIdCredit);
+            this.tabPage5.Controls.Add(this.label29);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(1444, 676);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "tabPage5";
+            this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // deposit
+            // userIDCredit
             // 
-            this.deposit.Location = new System.Drawing.Point(551, 253);
-            this.deposit.Name = "deposit";
-            this.deposit.Size = new System.Drawing.Size(75, 23);
-            this.deposit.TabIndex = 6;
-            this.deposit.Text = "Submit";
-            this.deposit.UseVisualStyleBackColor = true;
-            this.deposit.Click += new System.EventHandler(this.deposit_Click);
+            this.userIDCredit.Location = new System.Drawing.Point(479, 259);
+            this.userIDCredit.Name = "userIDCredit";
+            this.userIDCredit.Size = new System.Drawing.Size(188, 20);
+            this.userIDCredit.TabIndex = 7;
+            // 
+            // submitCredit
+            // 
+            this.submitCredit.Location = new System.Drawing.Point(592, 299);
+            this.submitCredit.Name = "submitCredit";
+            this.submitCredit.Size = new System.Drawing.Size(75, 23);
+            this.submitCredit.TabIndex = 6;
+            this.submitCredit.Text = "Submit";
+            this.submitCredit.UseVisualStyleBackColor = true;
+            this.submitCredit.Click += new System.EventHandler(this.submitCredit_Click);
+            // 
+            // DueDateCredit
+            // 
+            this.DueDateCredit.Location = new System.Drawing.Point(479, 223);
+            this.DueDateCredit.Name = "DueDateCredit";
+            this.DueDateCredit.Size = new System.Drawing.Size(188, 20);
+            this.DueDateCredit.TabIndex = 5;
+            // 
+            // currencyCredit
+            // 
+            this.currencyCredit.FormattingEnabled = true;
+            this.currencyCredit.Location = new System.Drawing.Point(479, 149);
+            this.currencyCredit.Name = "currencyCredit";
+            this.currencyCredit.Size = new System.Drawing.Size(188, 21);
+            this.currencyCredit.TabIndex = 4;
+            // 
+            // amountCredit
+            // 
+            this.amountCredit.Location = new System.Drawing.Point(479, 111);
+            this.amountCredit.Name = "amountCredit";
+            this.amountCredit.Size = new System.Drawing.Size(188, 20);
+            this.amountCredit.TabIndex = 3;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(427, 264);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(46, 13);
+            this.label40.TabIndex = 2;
+            this.label40.Text = "User ID:";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(399, 226);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(74, 13);
+            this.label19.TabIndex = 2;
+            this.label19.Text = "Payment Due:";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(419, 152);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(52, 13);
+            this.label39.TabIndex = 2;
+            this.label39.Text = "Currency:";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(424, 115);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(46, 13);
+            this.label37.TabIndex = 2;
+            this.label37.Text = "Amount:";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(415, 76);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(57, 13);
+            this.label34.TabIndex = 2;
+            this.label34.Text = "Person ID:";
+            // 
+            // personIdCredit
+            // 
+            this.personIdCredit.Location = new System.Drawing.Point(479, 72);
+            this.personIdCredit.Name = "personIdCredit";
+            this.personIdCredit.Size = new System.Drawing.Size(188, 20);
+            this.personIdCredit.TabIndex = 1;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(523, 19);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(59, 24);
+            this.label29.TabIndex = 0;
+            this.label29.Text = "Credit";
+            // 
+            // t
+            // 
+            this.t.AutoSize = true;
+            this.t.Location = new System.Drawing.Point(423, 190);
+            this.t.Name = "t";
+            this.t.Size = new System.Drawing.Size(45, 13);
+            this.t.TabIndex = 2;
+            this.t.Text = "Interest:";
+            // 
+            // interestCredit
+            // 
+            this.interestCredit.Location = new System.Drawing.Point(479, 187);
+            this.interestCredit.Name = "interestCredit";
+            this.interestCredit.Size = new System.Drawing.Size(188, 20);
+            this.interestCredit.TabIndex = 8;
             // 
             // Form1
             // 
@@ -1148,6 +1306,8 @@ namespace BankForm
             ((System.ComponentModel.ISupportInitialize)(this.peopleList)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1251,13 +1411,28 @@ namespace BankForm
         private Label label2;
         private TextBox personID;
         private Label label1;
-        private TextBox interest;
         private ComboBox currency;
-        private Label label19;
         private Label label14;
         private Label label5;
         private TextBox userID;
         private Button deposit;
         private Label label26;
+        private TabPage tabPage5;
+        private ComboBox currencyCredit;
+        private TextBox amountCredit;
+        private Label label39;
+        private Label label37;
+        private Label label34;
+        private TextBox personIdCredit;
+        private Label label29;
+        private DateTimePicker DueDateCredit;
+        private Label label19;
+        private Button submitCredit;
+        private TextBox userIDCredit;
+        private Label label40;
+        private TextBox interest;
+        private Label label41;
+        private TextBox interestCredit;
+        private Label t;
     }
 }

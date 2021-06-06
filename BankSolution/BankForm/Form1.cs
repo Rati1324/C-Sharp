@@ -70,8 +70,13 @@ namespace BankForm
             currency.Items.Add("GEL");
             currency.Items.Add("USD");
             currency.Items.Add("EURO");
+            currencyCredit.Items.Add("GEL");
+            currencyCredit.Items.Add("USD");
+            currencyCredit.Items.Add("EURO");
             currency.SelectedIndex = 0;
             currency.DropDownStyle = ComboBoxStyle.DropDownList;
+            currencyCredit.SelectedIndex = 0;
+            currencyCredit.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
         private void countryUser_SelectedIndexChanged(object sender, EventArgs e)
@@ -234,6 +239,12 @@ namespace BankForm
         {
             Actions.Deposit D = new Actions.Deposit(personID.Text, DateTime.Now, Decimal.Parse(moneyAmount.Text), 
                 currency.SelectedItem.ToString(), Decimal.Parse(interest.Text), userID.Text);   
+        }
+
+        private void submitCredit_Click(object sender, EventArgs e)
+        {
+            Actions.Credit C = new Actions.Credit(personID.Text, DateTime.Now, Decimal.Parse(amountCredit.Text),
+                currency.SelectedIndex.ToString(), Decimal.Parse(interestCredit.Text), DueDateCredit.Value, Decimal.Parse(amountCredit.Text));
         }
     }
 }

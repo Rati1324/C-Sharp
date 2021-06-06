@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Credits>
+  <Credit>
+    <Person_ID></Person_ID>
+    <Credit_Date>6/6/2021 1:41:05 PM</Credit_Date>
+    <Amount>1212</Amount>
+    <Currency>0</Currency>
+    <Interest>1212</Interest>
+    <leftToPay>1212</leftToPay>
+    <Due_Date>2021-06-06T13:41:02.5019615+04:00</Due_Date>
+  </Credit>
+</Credits>
