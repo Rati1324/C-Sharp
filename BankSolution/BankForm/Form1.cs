@@ -188,6 +188,7 @@ namespace BankForm
         {
             
             var people = Account.PhysicalPerson.getAllPeople();
+            peopleList.Rows.Clear();
             foreach (var p in people)
             {
                 int n = peopleList.Rows.Add();
@@ -213,6 +214,7 @@ namespace BankForm
                 List<string> newInfo = new List<string>();
                 foreach (DataGridViewCell item in peopleList.Rows[e.RowIndex].Cells)
                 {
+                    string x = peopleList.Columns["save"].Name;
                     if (item.ColumnIndex == peopleList.Columns["save"].Index) break;
                     newInfo.Add(item.Value.ToString());
                 }
@@ -220,7 +222,16 @@ namespace BankForm
 
                 peopleList.Update();
             }
+            else if (peopleList.Columns["delete"].Index == e.ColumnIndex)
+            {
+                string id = peopleList.Rows[e.RowIndex].Cells["IDCol"].Value.ToString();
+                Account.PhysicalPerson.deletePerson(id);
+                peopleList.Update();
+                peopleList.Refresh();
+            }
         }
+
+       
     }
 }
 

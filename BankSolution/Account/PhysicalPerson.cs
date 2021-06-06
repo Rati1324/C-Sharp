@@ -59,7 +59,6 @@ namespace Account
         }
         public static void editPerson(List<string> newInfo)
         {
-            
             var X = XElement.Load("../../../BankForm/bin/Debug/People.xml");
             var P = X.Elements("Person");
             var p = P.Where(y => y.Element("ID").Value == newInfo[3].ToString()).First();
@@ -76,7 +75,12 @@ namespace Account
             p.SetElementValue("Guarantor_Relation", newInfo[10]);
             p.SetElementValue("Guarantor_Id", newInfo[11]);
             X.Save("../../../BankForm/bin/Debug/People.xml");
-
+        }
+        public static void deletePerson(string id)
+        {
+            var X = XElement.Load("../../../BankForm/bin/Debug/People.xml");
+            X.Elements().Where(y => y.Element("ID").Value == id).First().Remove();
+            X.Save("../../../BankForm/bin/Debug/People.xml");
         }
     }
 }

@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <People>
   <Person>
-    <GUID>887edd6d-7619-4cbf-b462-ea831c4dcdc3887edd6d-7619-4cbf-b462-ea831c4dcdc3</GUID>
+    <GUID>d1fba4e3-89cc-4337-807e-556dafe106b8</GUID>
     <Name>
-      <First>sdw12</First>
-      <Last>asd2d</Last>
+      <First>qweqq</First>
+      <Last>wedq</Last>
     </Name>
-    <Gender>1212121212</Gender>
-    <DateOfBirth>2020-2-3</DateOfBirth>
-    <ID>Georgia</ID>
+    <Gender>Male</Gender>
+    <DateOfBirth>01989:01:02</DateOfBirth>
+    <ID>12121212121</ID>
     <Country>Georgia</Country>
     <City>Tbilisi</City>
-    <Phone>32324242</Phone>
-    <Email>ads@sad.com</Email>
-    <Guarantor_Relation>112212121</Guarantor_Relation>
-    <Guarantor_Id>Parent</Guarantor_Id>
+    <Phone>121212121</Phone>
+    <Email>ad@sad.com</Email>
+    <Guarantor_Relation>Parent</Guarantor_Relation>
+    <Guarantor_Id>121212121</Guarantor_Id>
   </Person>
 </People>

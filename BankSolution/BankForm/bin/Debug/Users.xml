@@ -12,4 +12,19 @@
     <Email>test</Email>
     <Password>test</Password>
   </User>
+  <User>
+    <GUID>9dae6d61-88be-4f63-a466-eff576af7c17</GUID>
+    <Name>
+      <First>asd</First>
+      <Last>sdewq</Last>
+    </Name>
+    <Gender>Male</Gender>
+    <DateOfBirth>01989:01:02</DateOfBirth>
+    <ID>12121212121</ID>
+    <Country>Georgia</Country>
+    <City>Tbilisi</City>
+    <Phone>121212121</Phone>
+    <Email>sad@asd.com</Email>
+    <Password>wqeeqw</Password>
+  </User>
 </Users>
